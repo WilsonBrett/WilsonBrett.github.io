@@ -3,15 +3,21 @@ body {
 	margin: 0px;
 	padding: 0px;
 	color: rgb(254,203,0);
-	
+	background-color: black;
 }
 #hero {
 	height: 900px;
-	width: 100%;
+	width: 92%;
+	margin: 0px auto;
 	background-image: url('../images/main.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	
+}
+#hero div {
+	font-family: 'Muli', sans-serif;
+	font-size: 24px;
+
 }
 h1 {
 	font-family: 'Quando', serif;
@@ -74,36 +80,28 @@ nav a:hover {
 }
 #images {
 	background-color: black;
-	padding-top: 5px;
-
-}
-#images section{
+	padding-top: 2px;
 	display: inline-block;
+	
+}
+#images img {
 	margin-right: -2px; /*needed to take care of inline-block phantom 4px right margin on container elements.*/
 }
-ul {
-	list-style-type: none;
-	
-}
-li {
-	font-family: 'Muli', sans-serif;
-	
-}
+
 #menu {
-	background-color: rgb(254, 203, 0);
-	color: rgb(19,19,19);
 	overflow: hidden;
+	margin-top: -4px;
 }
 #meals {
-	width: 50%;
-	float: left;
-	background-color: rgb(19,19,19);
+	width: 49%;
 	color: rgb(254,203,0);
+	display: inline-block;
+	margin-left: -320px;
+	margin-right: 150px;
+	padding-top: 10px;
 	padding-right: 2px;
-	
 }
-#meals h3 {
-	margin: 10px 0px;
+#menu h3 {
 	letter-spacing: 3px;
 
 }
@@ -119,8 +117,54 @@ li {
 	letter-spacing: 1px;
 
 }
-#sides {
-	float: left;
+#extras {
+	width: 17%;
+	color: black;
+ 	display: inline-block;
+	vertical-align: top;
+	padding: 50px 0px 0px 1px;
+	
+}
+#extras div {
+	vertical-align: top;
+	width: 100%;
+	text-align: left;
+	background-color: rgb(254,203,90);
+	border-radius: 8px;
+}
+#extras h3 {
+	padding: 10px 0px 0px 10px;
+}
+#extras ul {
+	list-style-type: none;
+	margin: 0px 0px 10px 0px;
+	padding: 5px 0px 10px 25px;
+	font-family: 'Muli', sans-serif;
+}
+#hours {
+	padding: 10px;
+	background-color: rgb(254, 203, 90);
+	color: black;
+	width: 92%;
+	margin: 0 auto;
+}
+#hours div {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+#testimonials {
+	padding: 10px;
+	color: white;
+	background-color: rgb(61,111,255);
+	width: 92%;
+	margin: 0 auto;
+}
+#testimonials p {
+	display: inline-block;
+	margin-top: 10px;
+	margin: 10px 20px;
+	width: 20%;
 }
 footer {
 	width: 100%;
