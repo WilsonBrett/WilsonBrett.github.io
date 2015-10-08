@@ -4,43 +4,30 @@ body {
 	padding: 0px;
 	color: rgb(254,203,0);
 	background-color: black;
+	font-family: 'Muli', sans-serif;
+	font-size:16px;
 }
-#hero {
-	height: 900px;
-	width: 92%;
-	margin: 0px auto;
+section#hero {
+	height: 90vh;
 	background-image: url('../images/main.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	
 }
-#hero div {
-	font-family: 'Muli', sans-serif;
-	font-size: 24px;
-
+section#hero div {
+	font-size: 1.5em;
 }
-h1 {
-	font-family: 'Quando', serif;
-	font-size: ;
-	font-weight: 300;
-	margin: 0px;
-	padding: 0px;
-	
-}
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Quando', serif;
 	font-weight: 300;
-	margin: 0px;
-	padding: 0px;
 }
 p {
-	font-family: 'Muli', sans-serif;
+	
 	margin: 0px;
 	padding: 0px;
 
 }
 header {
-	position: fixed;
+	position: absolute;
 	top: 20px;
 	width: 100%;
 	background-color: rgba(19,19,19,0.9);
@@ -85,12 +72,13 @@ nav a:hover {
 	
 }
 #images img {
-	margin-right: -2px; /*needed to take care of inline-block phantom 4px right margin on container elements.*/
+	float:left;
+	padding:.1em;
+	width:25%;
 }
 
 #menu {
 	overflow: hidden;
-	margin-top: -4px;
 }
 #meals {
 	width: 49%;
@@ -107,7 +95,7 @@ nav a:hover {
 }
 #meals div {
 	width: 80%;
-	margin: 20px auto;
+	margin: 1.25em auto;
 }
 #meals h4 {
 	font-variant: small-caps;
