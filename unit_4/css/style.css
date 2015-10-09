@@ -1,69 +1,48 @@
+* { margin: 0; padding 0; box-sizing: border-box; }
 body {
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
 	color: rgb(254,203,0);
 	background-color: black;
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
 }
-#hero {
-	height: 900px;
-	width: 92%;
-	margin: 0px auto;
+section#hero {
+	height: 90vh;
 	background-image: url('../images/main.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	
 }
-#hero div {
-	font-family: 'Muli', sans-serif;
-	font-size: 24px;
-
-}
-h1 {
-	font-family: 'Quando', serif;
-	font-size: ;
-	font-weight: 300;
-	margin: 0px;
-	padding: 0px;
-	
-}
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Quando', serif;
 	font-weight: 300;
-	margin: 0px;
-	padding: 0px;
 }
 p {
-	font-family: 'Muli', sans-serif;
 	margin: 0px;
 	padding: 0px;
-
 }
 header {
-	position: fixed;
+	position: absolute;
 	top: 20px;
 	width: 100%;
 	background-color: rgba(19,19,19,0.9);
 	padding: 10px;
-
 }
 #logoLeft {
-	/*float: left;*/
 	border-radius: 5px;
 }
 #headerText {
 	display: inline-block;
 	vertical-align: 30px;
 	margin: 0px 175px;
-
 }
 #logoRight {
 	border-radius: 5px;
-
 }
 #slogan {
 	font-style: italic;
-	
 }
 nav a {
 	text-decoration: none;
@@ -85,95 +64,92 @@ nav a:hover {
 	
 }
 #images img {
-	margin-right: -2px; /*needed to take care of inline-block phantom 4px right margin on container elements.*/
+	float: left;
+	padding: 0.1em;
+	width: 25%;
 }
-
 #menu {
 	overflow: hidden;
-	margin-top: -4px;
+	
 }
 #meals {
-	width: 49%;
+	width: 50%;
+	float: left;
 	color: rgb(254,203,0);
-	display: inline-block;
-	margin-left: -320px;
-	margin-right: 150px;
-	padding-top: 10px;
-	padding-right: 2px;
+	padding: 3em;
 }
-#menu h3 {
+#menu h2 {
 	letter-spacing: 3px;
-
+	padding-bottom: 1.5em;;
 }
 #meals div {
-	width: 80%;
-	margin: 20px auto;
+	
 }
-#meals h4 {
+#meals h3 {
 	font-variant: small-caps;
 	letter-spacing: 2px;
 }
 #meals div p {
 	letter-spacing: 1px;
+	text-align: left;
 
 }
 #extras {
-	width: 17%;
+	width: 50%;
 	color: black;
- 	display: inline-block;
 	vertical-align: top;
-	padding: 50px 0px 0px 1px;
-	
+	display: inline-block;
+	padding: 3em;
 }
 #extras div {
+	width: 35%;
 	vertical-align: top;
-	width: 100%;
 	text-align: left;
 	background-color: rgb(254,203,90);
 	border-radius: 8px;
+	margin-bottom: 10px;
 }
-#extras h3 {
-	padding: 10px 0px 0px 10px;
+#extras h2 {
+	padding: 10px 0px 5px 10px;
 }
 #extras ul {
 	list-style-type: none;
-	margin: 0px 0px 10px 0px;
-	padding: 5px 0px 10px 25px;
+	padding: 0 0 10px 25px;
 	font-family: 'Muli', sans-serif;
 }
 #hours {
-	padding: 10px;
+	padding: 3em;
 	background-color: rgb(254, 203, 90);
 	color: black;
-	width: 92%;
-	margin: 0 auto;
+	overflow: hidden;
 }
 #hours div {
-	width: 40%;
-	display: inline-block;
+	width: 50%;
+	float: left;
 	vertical-align: top;
+	padding: 2em;
+	
+}
+#hours div h3 {
+	font-variant: small-caps;
+}
+#hours div p {
+	text-align: left;
 }
 #testimonials {
-	padding: 10px;
+	padding: 2em;
 	color: white;
 	background-color: rgb(61,111,255);
-	width: 92%;
-	margin: 0 auto;
+	overflow: hidden;
 }
 #testimonials p {
-	display: inline-block;
-	margin-top: 10px;
-	margin: 10px 20px;
-	width: 20%;
+	float: left;
+	width: 33%;
+	padding: 2em;
 }
 footer {
 	width: 100%;
 	background-color: rgba(19,19,19,0.9);
 	padding: 5px 0px;
-}
-/*not a valid solution*/
-#menu:target, #images:target {
-	padding-top: 200px;
-	
 }
 
