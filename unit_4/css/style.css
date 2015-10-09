@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+
 * { margin: 0; padding 0; box-sizing: border-box; }
-=======
-* { margin:0; padding:0; box-sizing:border-box; }
->>>>>>> origin/master
 body {
 	text-align: center;
 	margin: 0px;
@@ -10,11 +7,7 @@ body {
 	color: rgb(254,203,0);
 	background-color: black;
 	font-family: 'Muli', sans-serif;
-<<<<<<< HEAD
 	font-size: 16px;
-=======
-	font-size:16px;
->>>>>>> origin/master
 }
 section#hero {
 	height: 90vh;
@@ -22,21 +15,11 @@ section#hero {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-<<<<<<< HEAD
-=======
-section#hero div {
-	font-size: 1.5em;
-}
->>>>>>> origin/master
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Quando', serif;
 	font-weight: 300;
 }
 p {
-<<<<<<< HEAD
-=======
-	
->>>>>>> origin/master
 	margin: 0px;
 	padding: 0px;
 }
@@ -81,22 +64,12 @@ nav a:hover {
 	
 }
 #images img {
-<<<<<<< HEAD
 	float: left;
 	padding: 0.1em;
 	width: 25%;
-=======
-	float:left;
-	padding:.1em;
-	width:25%;
->>>>>>> origin/master
 }
 #menu {
 	overflow: hidden;
-<<<<<<< HEAD
-	
-=======
->>>>>>> origin/master
 }
 #meals {
 	width: 50%;
@@ -109,12 +82,8 @@ nav a:hover {
 	padding-bottom: 1.5em;;
 }
 #meals div {
-<<<<<<< HEAD
-	
-=======
 	width: 80%;
 	margin: 1.25em auto;
->>>>>>> origin/master
 }
 #meals h3 {
 	font-variant: small-caps;
