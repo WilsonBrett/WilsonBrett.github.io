@@ -1,5 +1,9 @@
 
-* { margin: 0; padding 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.clearfix {
+	overflow: auto;
+}
 body {
 	text-align: center;
 	margin: 0px;
@@ -15,13 +19,15 @@ section#hero {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-h1, h2, h3, h4, h5, h6 {
+h1 {
+	font-family: 'Rye', cursive; /*western style display font*/
+	font-size: 44px;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+h2, h3, h4, h5, h6 {
 	font-family: 'Quando', serif;
 	font-weight: 300;
-}
-p {
-	margin: 0px;
-	padding: 0px;
 }
 header {
 	position: absolute;
@@ -36,13 +42,14 @@ header {
 #headerText {
 	display: inline-block;
 	vertical-align: 30px;
-	margin: 0px 175px;
+	margin: 0px 150px;
 }
 #logoRight {
 	border-radius: 5px;
 }
 #slogan {
 	font-style: italic;
+	font-size: 1.25em;
 }
 nav a {
 	text-decoration: none;
@@ -58,10 +65,7 @@ nav a:hover {
 	
 }
 #images {
-	background-color: black;
-	padding-top: 2px;
-	display: inline-block;
-	
+	padding-top: 1px;
 }
 #images img {
 	float: left;
@@ -69,17 +73,19 @@ nav a:hover {
 	width: 25%;
 }
 #menu {
-	overflow: hidden;
+
+}
+#menu section {
+	float: left;
+	padding: 3em;
+	width: 50%;
+	
 }
 #meals {
-	width: 50%;
-	float: left;
 	color: rgb(254,203,0);
-	padding: 3em;
 }
 #menu h2 {
 	letter-spacing: 3px;
-	padding-bottom: 1.5em;;
 }
 #meals div {
 	width: 80%;
@@ -95,14 +101,11 @@ nav a:hover {
 
 }
 #extras {
-	width: 50%;
 	color: black;
-	vertical-align: top;
-	display: inline-block;
-	padding: 3em;
+
 }
 #extras div {
-	width: 35%;
+	width: 260px;
 	vertical-align: top;
 	text-align: left;
 	background-color: rgb(254,203,90);
@@ -121,7 +124,6 @@ nav a:hover {
 	padding: 3em;
 	background-color: rgb(254, 203, 90);
 	color: black;
-	overflow: hidden;
 }
 #hours div {
 	width: 50%;
@@ -137,15 +139,15 @@ nav a:hover {
 	text-align: left;
 }
 #testimonials {
-	padding: 2em;
+	padding: 3em;
 	color: white;
 	background-color: rgb(61,111,255);
-	overflow: hidden;
 }
 #testimonials p {
 	float: left;
 	width: 33%;
 	padding: 2em;
+	text-align: left;
 }
 footer {
 	width: 100%;
