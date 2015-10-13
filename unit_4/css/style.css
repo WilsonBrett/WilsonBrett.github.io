@@ -15,7 +15,7 @@ body {
 }
 section#hero {
 	height: 90vh;
-	background-image: url('../images/main.jpg');
+	background-image: url('../images/main_lego.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -35,21 +35,58 @@ header {
 	width: 100%;
 	background-color: rgba(19,19,19,0.9);
 	padding: 10px;
+
+}
+header section {
+	margin: 0 auto;
+	width: 100%;
 }
 #logoLeft {
+	width: 33%;
+	float: left;
+}
+#logoLeft img {
 	border-radius: 5px;
 }
 #headerText {
-	display: inline-block;
+	float: left;
+	width: 34%;
 	vertical-align: 30px;
-	margin: 0px 150px;
+
 }
 #logoRight {
+	width: 33%;
+	float: right;
+
+}
+#logoRight img {
 	border-radius: 5px;
 }
-#slogan {
+.slogan {
 	font-style: italic;
-	font-size: 1.25em;
+	text-align: left;
+	position: absolute;
+	left: 50px;
+	background-color: black;
+	color: white;
+	padding: .3em;
+	font-family: 'Rye', cursive;
+	border-radius: 5px;
+	text-transform: uppercase;
+
+}
+#slog1 {
+	top: 300px;
+}
+#slog2 {
+	top: 350px;
+}
+#slog2 span {
+	font-weight: bold;
+	color: rgb(254,203,0);
+}
+nav {
+	margin-top: 10px;
 }
 nav a {
 	text-decoration: none;
@@ -62,7 +99,6 @@ nav a {
 }
 nav a:hover {
 	color: red;
-	
 }
 #images {
 	padding-top: 1px;
@@ -79,7 +115,6 @@ nav a:hover {
 	float: left;
 	padding: 3em;
 	width: 50%;
-	
 }
 #meals {
 	color: rgb(254,203,0);
