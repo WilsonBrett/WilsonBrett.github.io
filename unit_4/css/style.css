@@ -18,6 +18,7 @@ section#hero {
 	background-image: url('../images/main_lego.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 h1 {
 	font-family: 'Rye', cursive; /*western style display font*/
@@ -178,11 +179,14 @@ nav a:hover {
 	color: white;
 	background-color: rgb(61,111,255);
 }
-#testimonials p {
+#testimonials div {
 	float: left;
 	width: 33%;
 	padding: 2em;
 	text-align: left;
+}
+#testimonials div h4 {
+	font-variant: small-caps;
 }
 footer {
 	width: 100%;
