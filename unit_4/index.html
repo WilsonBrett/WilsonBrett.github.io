@@ -6,7 +6,9 @@
 		<link href='https://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 		<link href='images/favicon.png' rel='icon' type='image/png'>
- 		<link rel="stylesheet" type="text/css" href="css/style.css"> 
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+ 		<link rel="stylesheet" type="text/css" href="css/style.css">
+ 		<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 	</head>
 	<body>
 		<header>
@@ -33,10 +35,18 @@
 		<h2 id="slog1" class="slogan">Warm your soul</h2>
 		<h2 id="slog2" class="slogan">With a <span>cup</span> or <span>bowl!</span></h2>
 		<section id="images" class="clearfix">
-				<img src="images/girl.jpg" alt="Girl smiling at food truck window">
-				<img src="images/red_gr_chili.jpg" alt="Fresh red and green chilis image">
-				<img src="images/chiliPic.jpg" alt="Cup of chili image">
-				<img src="images/cornBread.jpg" alt="Corn Bread in pan image">
+				<a href="images/girl.jpg" data-lightbox="girl">
+					<img src="images/girl.jpg" alt="Girl smiling at food truck window">
+				</a>
+				<a href="images/red_gr_chili.jpg" data-lightbox="red_gr_chili">
+					<img src="images/red_gr_chili.jpg" alt="Fresh red and green chilis image">
+				</a>
+				<a href="images/chiliPic.jpg" data-lightbox="chiliPic">
+					<img src="images/chiliPic.jpg" alt="Cup of chili image">
+				</a>
+				<a href="images/cornBread.jpg" data-lightbox="cornBread">
+					<img src="images/cornBread.jpg" alt="Corn Bread in pan image">
+				</a>
 		</section>
 		<section id="menu" class="clearfix">
 			<section id="meals">
@@ -117,5 +127,6 @@
 				<a href="#">Terms</a>
 			</nav>
 		</footer>
+		<script src="js/lightbox.js"></script>
 	</body>
 </html>
