@@ -12,28 +12,30 @@
 	</head>
 	<body>
 		<header>
-			<section class="clearfix">
+			<section id="headWrapper">
 				<div id="logoLeft">
 					<img src="images/truck.png" alt="truck logo image">
 				</div>
 				<div id="headerText">
 					<h1>Four Corners Chili Truck</h1>
-					
+					<nav>
+						<a href="#menu">Menu</a>
+						<a href="#images">Images</a>
+						<a href="#hours">Hours</a>
+						<a href="#testimonials">Testimonials</a>
+					</nav>
 				</div>
 				<div id="logoRight">
 					<img src="images/fourCorners.png" alt="Four state corners bullseye image">
 				</div>
 			</section>
-			<nav>
-				<a href="#menu">Menu</a>
-				<a href="#images">Images</a>
-				<a href="#hours">Hours</a>
-				<a href="#testimonials">Testimonials</a>
-			</nav>
 		</header>
-		<section id="hero"></section>
-		<h2 id="slog1" class="slogan">Warm your soul</h2>
-		<h2 id="slog2" class="slogan">With a <span>cup</span> or <span>bowl!</span></h2>
+		<section id="hero">
+			<div id="slogWrapper">
+				<h2>Warm your soul</h2><br />
+				<h2>With a <span>cup</span> or <span>bowl!</span></h2>
+			</div>
+		</section>
 		<section id="images" class="clearfix">
 				<a href="images/girl.jpg" data-lightbox="girl">
 					<img src="images/girl.jpg" alt="Girl smiling at food truck window">
@@ -49,74 +51,80 @@
 				</a>
 		</section>
 		<section id="menu" class="clearfix">
-			<section id="meals">
-				<h2>Chilis</h2>
-				<div>
-					<h3>Everybody's Meat Chili</h3>
-					<p>Everybody's Meat Chili is a traditional home made chili recipe with red and black beans, grass fed organic beef, a tomato sauce base, various spices, and shredded cheese.</p>
-					<p>CUP: $4.95</p>
-					<p>BOWL: $6.95</p>
-				</div>
-				<div>
-					<h3>Everybody's Veggie Chili</h3>
-					<p>Everybody's Veggie Chili is the same as the meat chili without the beef, but with added bell peppers and mushrooms! </p>
-					<p>CUP: $3.95</p>
-					<p>BOWL: $5.95</p>
-				</div>
-				<div>
-					<h3>Santa Fe Chili</h3>
-					<p>Our Santa Fe Chili is straight out of New Mexico with beef and black beans seasoned to perfection and topped with green chilis and shredded cheese.</p>
-					<p>CUP: $5.50</p>
-					<p>BOWL: $7.25</p>
-				</div>
-			</section>
-			<section id="extras">
-				<div id="sides">
-					<h2>Sides</h2>
-					<ul>
-						<li>Sour Cream - 50&cent</li>
-						<li>Cornbread - $1.50</li>
-						<li>Extra Shredded Cheese - 75&cent</li>
-						<li>Hot Sauce - No Charge</li>
-						<li>Verde Sauce - No Charge</li>
-					</ul>
-				</div>
-				<div id="drinks">
-					<h2>Drinks</h2>
-					<ul>
-						<li>Cow Milk - $2.00</li>
-						<li>Almond Milk - $2.00</li>
-						<li>Bottled Water - $1.50</li>
-						<li>Coke Products - $1.50</li>
-					</ul>
-				</div>
-			</section>
+			<div id="menuWrapper">
+				<section id="meals">
+					<h2>Chilis</h2>
+					<div>
+						<h3>Everybody's Meat Chili</h3>
+						<p>Everybody's Meat Chili is a traditional home made chili recipe with red and black beans, grass fed organic beef, a tomato sauce base, various spices, and shredded cheese.</p>
+						<p>CUP: $4.95</p>
+						<p>BOWL: $6.95</p>
+					</div>
+					<div>
+						<h3>Everybody's Veggie Chili</h3>
+						<p>Everybody's Veggie Chili is the same as the meat chili without the beef, but with added bell peppers and mushrooms! </p>
+						<p>CUP: $3.95</p>
+						<p>BOWL: $5.95</p>
+					</div>
+					<div>
+						<h3>Santa Fe Chili</h3>
+						<p>Our Santa Fe Chili is straight out of New Mexico with beef and black beans seasoned to perfection and topped with green chilis and shredded cheese.</p>
+						<p>CUP: $5.50</p>
+						<p>BOWL: $7.25</p>
+					</div>
+				</section>
+				<section id="extras">
+					<div id="sides">
+						<h2>Sides</h2>
+						<ul>
+							<li>Sour Cream - 50&cent</li>
+							<li>Cornbread - $1.50</li>
+							<li>Extra Shredded Cheese - 75&cent</li>
+							<li>Hot Sauce - No Charge</li>
+							<li>Verde Sauce - No Charge</li>
+						</ul>
+					</div>
+					<div id="drinks">
+						<h2>Drinks</h2>
+						<ul>
+							<li>Cow Milk - $2.00</li>
+							<li>Almond Milk - $2.00</li>
+							<li>Bottled Water - $1.50</li>
+							<li>Coke Products - $1.50</li>
+						</ul>
+					</div>
+				</section>
+			</div>
 		</section>
 		<section id="hours" class="clearfix">
 			<h2>Where to Find Us</h2>
-			<div>
-				<h3>In Season: Memorial Day - Labor Day</h3>
-				<p>We operate weekdays in Portland's Monument Square from 11am-3pm and on Commercial St. from 4pm-8pm. 
-					Please also check our Facebook page for local events and festivals.</p>
-			</div>
-			<div>
-				<h3>Off Season: Labor Day - Memorial Day</h3>
-				<p>On weekdays in the off season after labor day we will be primarily located in Portland's Monument Square from 11am-3pm.</p>
+			<div id="hoursWrapper">
+				<div>
+					<h3>In Season: Memorial Day - Labor Day</h3>
+					<p>We operate weekdays in Portland's Monument Square from 11am-3pm and on Commercial St. from 4pm-8pm. 
+						Please also check our Facebook page for local events and festivals.</p>
+				</div>
+				<div>
+					<h3>Off Season: Labor Day - Memorial Day</h3>
+					<p>On weekdays in the off season after labor day we will be primarily located in Portland's Monument Square from 11am-3pm.</p>
+				</div>
 			</div>
 		</section>
 		<section id="testimonials" class="clearfix">
 				<h2>Testimonials</h2>
-				<div>
-					<h4>Guido Venevicci</h4>
-					<p>Four Corners Chili Truck really blew my hair back! Convenient location, sweet service, and smoking hot sauces! Everbody's Meat Chili is where it's at. The next time you are hungry head out your door and spice it up.  I will definitely be back next week!</p>
-				</div>
-				<div>
-					<h4>Yo Momma</h4>
-					<p>I stumbled upon the Four Corners Chili Truck and ordered the golden skillet style cornbread with my chili. Buttered to perfection. So warm and delicious and perfect for dipping into whatever chili you order. Thanks Four Corners!</p>
-				</div>
-				<div>
-					<h4>Dr. Richard Quack</h4>
-					<p>The Santa Fe Chili really made my day! The perfect comfort food rich with south western influence and spice. The best anti-depressant one could prescribe so if you are feeling down this winter head on out and fill your bowl. Doctor's orders!</p>
+				<div id="testiWrapper">
+					<div>
+						<h4>Guido Venevicci</h4>
+						<p>Four Corners Chili Truck really blew my hair back! Convenient location, sweet service, and smoking hot sauces! Everbody's Meat Chili is where it's at. The next time you are hungry head out your door and spice it up.  I will definitely be back next week!</p>
+					</div>
+					<div>
+						<h4>Yo Momma</h4>
+						<p>I stumbled upon the Four Corners Chili Truck and ordered the golden skillet style cornbread with my chili. Buttered to perfection. So warm and delicious and perfect for dipping into whatever chili you order. Thanks Four Corners!</p>
+					</div>
+					<div>
+						<h4>Dr. Richard Quack</h4>
+						<p>The Santa Fe Chili really made my day! The perfect comfort food rich with south western influence and spice. The best anti-depressant one could prescribe so if you are feeling down this winter head on out and fill your bowl. Doctor's orders!</p>
+					</div>
 				</div>
 		</section>
 		<footer>

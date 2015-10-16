@@ -1,11 +1,19 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+/*
 .clearfix {
 	overflow: auto;
-}
+}*/
 body {
-	text-align: center;
 	margin: 0px;
 	padding: 0px;
 	color: rgb(254,203,0);
@@ -35,70 +43,69 @@ header {
 	top: 20px;
 	width: 100%;
 	background-color: rgba(19,19,19,0.9);
-	padding: 10px;
-
+	padding: .5em;
+	text-align: center;
 }
-header section {
+#headWrapper {
 	margin: 0 auto;
-	width: 100%;
+	width: 1200px;
 }
 #logoLeft {
-	width: 33%;
 	float: left;
+	width: 20%;
 }
 #logoLeft img {
 	border-radius: 5px;
+	margin: 0 auto;
 }
 #headerText {
 	float: left;
-	width: 34%;
-	vertical-align: 30px;
-
+	width: 60%;
 }
 #logoRight {
-	width: 33%;
-	float: right;
-
+	float: left;
+	width: 20%;
 }
 #logoRight img {
 	border-radius: 5px;
-}
-.slogan {
-	font-style: italic;
-	text-align: left;
-	position: absolute;
-	left: 50px;
-	background-color: black;
-	color: white;
-	padding: .3em;
-	font-family: 'Rye', cursive;
-	border-radius: 5px;
-	text-transform: uppercase;
-}
-#slog1 {
-	top: 300px;
-}
-#slog2 {
-	top: 350px;
-}
-#slog2 span {
-	font-weight: bold;
-	color: rgb(254,203,0);
+	margin: 0 auto;
 }
 nav {
-	margin-top: 10px;
+	margin: 1.5em auto;
 }
 nav a {
 	text-decoration: none;
 	font-family: helvetica, sans-serif;
 	color: rgb(254,203,0);
-	margin: 0px 70px;
+	margin: 0 2.5em;
 	letter-spacing: 1px;
 	font-variant: small-caps;
 	font-weight: 300;
 }
 nav a:hover {
 	color: red;
+}
+#slogWrapper {
+	position: absolute;
+	top: 300px;
+	left: 50px;
+}
+#slogWrapper h2 {
+	background-color: black;
+	display: inline-block;
+	margin-bottom: .3em;
+	font-style: italic;
+	text-align: left;
+	color: white;
+	padding: .3em;
+	font-family: 'Rye', cursive;
+	border-radius: 5px;
+	text-transform: uppercase;
+	
+}
+#slogWrapper span {
+	font-weight: bold;
+	color: rgb(254,203,0);
 }
 #images {
 	padding-top: 1px;
@@ -108,12 +115,13 @@ nav a:hover {
 	padding: 0.1em;
 	width: 25%;
 }
-#menu {
-
+#menuWrapper {
+	width: 1200px;
+	margin: 0 auto;
 }
 #menu section {
 	float: left;
-	padding: 3em;
+	padding: 2em;
 	width: 50%;
 }
 #meals {
@@ -121,10 +129,13 @@ nav a:hover {
 }
 #menu h2 {
 	letter-spacing: 3px;
+	
 }
 #meals div {
-	width: 80%;
 	margin: 1.25em auto;
+}
+#meals h2 {
+	text-align: center;
 }
 #meals h3 {
 	font-variant: small-caps;
@@ -160,7 +171,14 @@ nav a:hover {
 	background-color: rgb(254, 203, 90);
 	color: black;
 }
-#hours div {
+#hours h2 {
+	text-align: center;
+}
+#hoursWrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+#hoursWrapper div {
 	width: 50%;
 	float: left;
 	vertical-align: top;
@@ -178,7 +196,14 @@ nav a:hover {
 	color: white;
 	background-color: rgb(61,111,255);
 }
-#testimonials div {
+#testimonials h2 {
+	text-align: center;
+}
+#testiWrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+#testiWrapper div {
 	float: left;
 	width: 33%;
 	padding: 2em;
@@ -191,5 +216,6 @@ footer {
 	width: 100%;
 	background-color: rgba(19,19,19,0.9);
 	padding: 5px 0px;
+	text-align: center;
 }
 
