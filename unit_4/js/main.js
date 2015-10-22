@@ -3,7 +3,7 @@ $(document).ready(function() {
 	
 	$('#logoLeft img').mouseenter(function() {
 		if (!wiggled) {
-			$('#logoLeft').effect('bounce',{times:2},500);
+			$('#logoLeft').effect('bounce',{times:1},250);
 			wiggled = true;
 		}
 	});
@@ -16,7 +16,7 @@ $(document).ready(function() {
 	
 		$('#logoRight img').mouseenter(function() {
 		if (!wiggled) {
-			$('#logoRight').effect('bounce',{times:2},500);
+			$('#logoRight').effect('bounce',{times: 1},250);
 			wiggled = true;
 		}
 	});

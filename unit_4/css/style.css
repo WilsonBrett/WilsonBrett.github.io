@@ -75,7 +75,7 @@ header {
 	display: block;
 }
 nav {
-	padding-top: 30px;
+	padding-top: 2em;
 	text-align: center;
 }
 nav a {
@@ -158,19 +158,16 @@ nav a:hover {
 
 }
 #extras div {
-	width: 260px;
 	vertical-align: top;
 	text-align: left;
 	background-color: rgb(254,203,90);
 	border-radius: 8px;
 	margin-bottom: 10px;
-}
-#extras h2 {
-	padding: 10px 0px 5px 10px;
+	padding: 1.5em;
 }
 #extras ul {
 	list-style-type: none;
-	padding: 0 0 10px 25px;
+	padding: .5em .5em 0;
 	font-family: 'Muli', sans-serif;
 }
 #hours {
