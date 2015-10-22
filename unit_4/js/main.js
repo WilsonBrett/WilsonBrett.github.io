@@ -1,10 +1,31 @@
 $(document).ready(function() {
-	$('#logoLeft img').click(function() {
-		$('#logoLeft').effect('bounce',{times:2},500);
+	var wiggled = false;
+	
+	$('#logoLeft img').mouseenter(function() {
+		if (!wiggled) {
+			$('#logoLeft').effect('bounce',{times:2},500);
+			wiggled = true;
+		}
 	});
 	
-	$('#logoRight img').click(function() {
-		$('#logoRight').effect('bounce',{times:2},500);
+	$('#logoLeft img').mouseout(function() {
+		if (wiggled) {
+			wiggled = false;
+		}
 	});
+	
+		$('#logoRight img').mouseenter(function() {
+		if (!wiggled) {
+			$('#logoRight').effect('bounce',{times:2},500);
+			wiggled = true;
+		}
+	});
+	
+	$('#logoRight img').mouseout(function() {
+		if (wiggled) {
+			wiggled = false;
+		}
+	});
+
 
 });
