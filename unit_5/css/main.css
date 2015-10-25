@@ -97,6 +97,42 @@ footer {
 	margin: 0 auto;
 /* 	border: solid white 1px; */
 }
+
+/*BEGIN PRODUCTS CSS*/
+section#productHero {
+	height: 90vh;
+	width: 100%;
+	background-image: url("../img/.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+section#products {
+	margin-top: 170px;
+	background-color: #F7D18E; 
+	padding: 3em;
+}
+section#products h2 {
+	text-align: center;
+}
+section#products div div {
+	float: left;
+	width: 25%;
+	padding: 2em 1em 0;
+}
+section#products p {
+	padding-top: .5em;
+	font-family: sans-serif;
+	letter-spacing: .1em;
+	line-height: 1.5em;
+	font-size: .8em;
+}
+
+
+
+
+
+
 .clearfix:after {
 	content: ".";
 	visibility: hidden;
