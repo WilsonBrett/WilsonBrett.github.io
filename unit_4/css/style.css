@@ -162,7 +162,7 @@ nav a:hover {
 	text-align: left;
 	background-color: rgb(254,203,90);
 	border-radius: 8px;
-	margin-bottom: 10px;
+	margin-bottom: 0.5em;
 	padding: 1.5em;
 }
 #extras ul {
