@@ -127,12 +127,21 @@ section#products p {
 	line-height: 1.5em;
 	font-size: .8em;
 }
-
-
-
-
-
-
+/*BEGIN CONTACT CSS*/
+section#contact {
+	margin-top: 170px;
+	width: 100%;
+	background-color: #F7D18E;
+	text-align: center;
+	padding: 3em;
+}
+section#contact div div {
+	float: left;
+	width: 33.33%;
+}
+section#contact div.wrapperMain {
+	padding-top: 3em;
+}
 .clearfix:after {
 	content: ".";
 	visibility: hidden;
