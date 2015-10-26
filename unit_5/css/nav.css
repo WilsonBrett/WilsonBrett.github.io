@@ -16,6 +16,7 @@ section#hero p {
 	position: absolute;
 	top: 400px;
 	right: 100px;
+	background-color: ;
 	color: white;
 	font-size: 2.5em;
 	font-family: serif;
@@ -73,7 +74,6 @@ section#about {
 	padding: 3em;
 }
 section#about h2 {
-	font-size: 2.5em;
 	font-family: serif;
 	text-align: center;
 }
@@ -91,7 +91,7 @@ footer {
 }
 /*BEGIN PRODUCTS CSS*/
 section#products {
-	margin-top: 140px;
+	margin-top: 170px;
 	background-color: #F7D18E; 
 	padding: 3em;
 }
@@ -112,7 +112,7 @@ section#products p {
 }
 /*BEGIN CONTACT CSS*/
 section#contact {
-	margin-top: 140px;
+	margin-top: 188px;
 	width: 100%;
 	background-color: #F7D18E;
 	text-align: center;
