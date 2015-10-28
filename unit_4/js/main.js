@@ -27,5 +27,15 @@ $(document).ready(function() {
 		}
 	});
 
+$(document).scroll(function(){
+    var scrollTop = $("html").scrollTop();
+    
+    if(scrollTop < 75) {
+        $("header").fadeIn();
+    }
+    else {
+        $("header").fadeOut();
+	}
+	});
 
 });
