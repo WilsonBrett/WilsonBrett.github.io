@@ -75,7 +75,6 @@ nav a {
 }
 nav a:hover {
 	color: red;
-	background-color: yellow;
 }
 /*BEGIN HERO*/
 section#hero div {
@@ -219,7 +218,7 @@ footer {
 	}
 	header {
 		top: 0;
-		position: fixed;
+		position: relative;
 	}
 	header div#headMid {
 		float: none;
