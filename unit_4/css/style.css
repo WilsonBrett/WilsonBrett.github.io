@@ -36,6 +36,7 @@ header {
 header div#logoLeft {
 	float: left;
 	width: 20%;
+	height: 100%;
 }
 header div#logoLeft img {
 	border-radius: 5px;
@@ -44,7 +45,6 @@ header div#logoLeft img {
 	max-width: 100%;
 }
 header div#headMid {
-	padding-top: 10px;
 	float: left;
 	width: 60%;
 }
@@ -65,13 +65,17 @@ nav a {
 	text-decoration: none;
 	font-family: helvetica, sans-serif;
 	color: rgb(254,203,0);
-	padding: ;
+	padding: 1.5em 0;
 	letter-spacing: 1px;
 	font-variant: small-caps;
 	font-weight: 300;
+	min-width: 25%;
+	display: block;
+	float: left;
 }
 nav a:hover {
 	color: red;
+	background-color: yellow;
 }
 /*BEGIN HERO*/
 section#hero div {
@@ -90,7 +94,6 @@ section#hero h2 {
 	font-family: 'Rye', cursive;
 	border-radius: 5px;
 	text-transform: uppercase;
-	
 }
 section#hero span {
 	font-weight: bold;
@@ -210,7 +213,7 @@ footer {
 .clearfix {
 	overflow: auto;
 }*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
 	body {
 		font-size: 12px;
 	}
@@ -234,6 +237,10 @@ footer {
 		float: none;
 		width: 100%;
 	}
+	section#menu section {
+		float: none;
+		width: 100%;
+	}
 	section#hours div div {
 		width: 100%;
 		float: none;
@@ -246,6 +253,6 @@ footer {
 		text-align: left;
 	}
 	.wrapper {
-		width: 100%;
+		width: 80%;
 	}
 }
