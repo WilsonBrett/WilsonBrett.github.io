@@ -1,25 +1,21 @@
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-
-.clearfix:after {
-	content: ".";
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
-}
-/*
-.clearfix {
-	overflow: auto;
-}*/
 body {
-	margin: 0px;
-	padding: 0px;
 	color: rgb(254,203,0);
 	background-color: black;
 	font-family: 'Muli', sans-serif;
 	font-size: 16px;
+}
+h1 {
+	font-family: 'Rye', cursive; /*western style display font*/
+	font-size: 2.75em;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-align: center;
+}
+h2, h3, h4, h5, h6 {
+	font-family: 'Quando', serif;
+	font-weight: 300;
 }
 section#hero {
 	height: 90vh;
@@ -29,18 +25,7 @@ section#hero {
 	background-position: center;
 	background-attachment: fixed;
 }
-h1 {
-	font-family: 'Rye', cursive; /*western style display font*/
-	font-size: 44px;
-	font-weight: 300;
-	letter-spacing: 2px;
-	text-align: center;
-
-}
-h2, h3, h4, h5, h6 {
-	font-family: 'Quando', serif;
-	font-weight: 300;
-}
+/*BEGIN HEADER*/
 header {
 	position: absolute;
 	top: 20px;
@@ -48,57 +33,53 @@ header {
 	background-color: rgba(19,19,19,0.9);
 	padding: .5em;
 }
-#headWrapper {
-	margin: 0 auto;
-	width: 1200px;
-}
-#logoLeft {
+header div#logoLeft {
 	float: left;
 	width: 20%;
 }
-#logoLeft img {
+header div#logoLeft img {
 	border-radius: 5px;
 	margin: 0 auto;
 	display: block;
+	max-width: 100%;
 }
-#headerText {
+header div#headMid {
 	padding-top: 10px;
 	float: left;
 	width: 60%;
 }
-#logoRight {
+header div#logoRight {
 	float: left;
 	width: 20%;
 }
-#logoRight img {
+header div#logoRight img {
 	border-radius: 5px;
 	margin: 0 auto;
 	display: block;
+	max-width: 100%;
 }
 nav {
-	padding-top: 2em;
 	text-align: center;
 }
 nav a {
 	text-decoration: none;
 	font-family: helvetica, sans-serif;
 	color: rgb(254,203,0);
-	padding: 1em 2.5em;
+	padding: ;
 	letter-spacing: 1px;
 	font-variant: small-caps;
 	font-weight: 300;
 }
 nav a:hover {
 	color: red;
-
-	
 }
-#slogWrapper {
+/*BEGIN HERO*/
+section#hero div {
 	position: absolute;
 	top: 300px;
 	left: 50px;
 }
-#slogWrapper h2 {
+section#hero h2 {
 	background-color: black;
 	display: inline-block;
 	margin-bottom: .3em;
@@ -111,54 +92,52 @@ nav a:hover {
 	text-transform: uppercase;
 	
 }
-#slogWrapper span {
+section#hero span {
 	font-weight: bold;
 	color: rgb(254,203,0);
 }
-#images {
+/*BEGIN IMAGES*/
+section#images {
 	padding-top: 1px;
 }
-#images img {
+section#images img {
 	float: left;
 	padding: 0.1em;
 	width: 25%;
 }
-#menuWrapper {
-	width: 1200px;
-	margin: 0 auto;
-}
-#menu section {
+/*BEGIN MENU*/
+section#menu section {
 	float: left;
 	padding: 2em;
 	width: 50%;
 }
-#meals {
+section#meals {
 	color: rgb(254,203,0);
 }
-#menu h2 {
+section#menu h2 {
 	letter-spacing: 3px;
 	
 }
-#meals div {
+section#meals div {
 	margin: 1.25em auto;
 }
-#meals h2 {
+section#meals h2 {
 	text-align: center;
 }
-#meals h3 {
+section#meals h3 {
 	font-variant: small-caps;
 	letter-spacing: 2px;
 }
-#meals div p {
+section#meals div p {
 	letter-spacing: 1px;
 	text-align: left;
 
 }
-#extras {
+section#extras {
 	color: black;
 
 }
-#extras div {
+section#extras div {
 	vertical-align: top;
 	text-align: left;
 	background-color: rgb(254,203,90);
@@ -166,55 +145,48 @@ nav a:hover {
 	margin-bottom: 0.5em;
 	padding: 1.5em;
 }
-#extras ul {
+section#extras ul {
 	list-style-type: none;
 	padding: .5em .5em 0;
 	font-family: 'Muli', sans-serif;
 }
-#hours {
+/*BEGIN HOURS*/
+section#hours {
 	padding: 3em;
 	background-color: rgb(254, 203, 90);
 	color: black;
 }
-#hours h2 {
+section#hours h2 {
 	text-align: center;
 }
-#hoursWrapper {
-	width: 1200px;
-	margin: 0 auto;
-}
-#hoursWrapper div {
+section#hours div div {
 	width: 50%;
 	float: left;
 	vertical-align: top;
 	padding: 2em;
-	
 }
-#hours div h3 {
+section#hours div h3 {
 	font-variant: small-caps;
 }
-#hours div p {
+section#hours div p {
 	text-align: left;
 }
-#testimonials {
+/*BEGIN TESTIMONIALS*/
+section#testimonials {
 	padding: 3em;
 	color: white;
 	background-color: rgb(61,111,255);
 }
-#testimonials h2 {
+section#testimonials h2 {
 	text-align: center;
 }
-#testiWrapper {
-	width: 1200px;
-	margin: 0 auto;
-}
-#testiWrapper div {
+section#testimonials div div {
 	float: left;
 	width: 33%;
 	padding: 2em;
 	text-align: left;
 }
-#testimonials div h4 {
+section#testimonials div h4 {
 	font-variant: small-caps;
 }
 footer {
@@ -223,4 +195,57 @@ footer {
 	padding: 5px 0px;
 	text-align: center;
 }
-
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+/*
+.clearfix {
+	overflow: auto;
+}*/
+@media screen and (max-width: 600px) {
+	body {
+		font-size: 12px;
+	}
+	header {
+		top: 0;
+		position: fixed;
+	}
+	header div#headMid {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	header div#logoLeft, header div#logoRight {
+		float: none;
+		display: none;
+	}
+	section#hero {
+		display: none;
+	}
+	section#images img {
+		float: none;
+		width: 100%;
+	}
+	section#hours div div {
+		width: 100%;
+		float: none;
+		padding: 2em;
+	}
+	section#testimonials div div {
+		float: none;
+		width: 100%;
+		padding: 2em;
+		text-align: left;
+	}
+	.wrapper {
+		width: 100%;
+	}
+}
