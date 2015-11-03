@@ -41,6 +41,7 @@ header div#logoLeft img {
 	border-radius: 5px;
 	margin: 0 auto;
 	display: block;
+	max-width: 100%;
 }
 header div#headMid {
 	float: left;
@@ -117,7 +118,6 @@ section#meals {
 }
 section#menu h2 {
 	letter-spacing: 3px;
-	
 }
 section#meals div {
 	margin: 1.25em auto;
@@ -132,11 +132,9 @@ section#meals h3 {
 section#meals div p {
 	letter-spacing: 1px;
 	text-align: left;
-
 }
 section#extras {
 	color: black;
-
 }
 section#extras div {
 	vertical-align: top;
@@ -186,15 +184,14 @@ section#testimonials div div {
 	width: 33%;
 	padding: 2em;
 	text-align: left;
-
 }
 section#testimonials div h4 {
 	font-variant: small-caps;
 	margin-bottom: .5em;
 }
 section#testimonials div p {
-	max-height: 200px;
-	overflow: scroll;
+	max-height: 150px;
+	overflow: hidden;
 }
 footer {
 	width: 100%;
