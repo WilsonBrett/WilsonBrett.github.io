@@ -44,9 +44,9 @@ header p  {
 	width: 10%;
 	font-size: 5em;
 	background-color: black;
-	color: #FFF2E7; /*offwhite*/
+	color: white; /*offwhite*/
 	padding-top: .1em;
-	border: solid #DE8642 .15em; /*orange*/
+	border: solid rgb(255,50,0) .15em; /*orange*/
 	font-family: 'Cinzel', georgia, serif;
 }
 header div div {
@@ -58,7 +58,7 @@ nav {
 	font-variant: small-caps;
 }
 nav a {
-	color: #F7D18E; /*gold*/
+	color: white;
 	text-decoration: none;
 	margin: 0 3em;
 }
@@ -66,11 +66,13 @@ nav a:visited {
 	text-decoration: none;
 }
 nav a:hover {
-	color: red;
+	color: rgb(255,50,0);
 }
 section#about {
-	background-color: #F7D18E; 
+	background-color: rgb(255,50,0);
+	color: white;
 	padding: 3em;
+	border-top: black 
 }
 section#about h2 {
 	font-size: 2.5em;
@@ -87,7 +89,7 @@ footer {
 	padding: 2em;
 	text-align: center;
 	background-color: #4B4D52;
-	color: #F7D18E;
+	color: white;
 }
 /*BEGIN PRODUCTS CSS*/
 section#products {
@@ -122,15 +124,14 @@ section#contact div div {
 	float: left;
 	width: 33.33%;
 }
-section#contact div.wrapperMain {
+section#contact div.wrapper {
 	padding-top: 3em;
 }
 section#contact p {
 	font-family: helvetica, sans-serif;
 }
-
-.wrapperMain {
-	width: 1200px;
+.wrapper {
+	max-width: 1200px;
 	margin: 0 auto;
 /* 	border: solid white 1px; */
 }

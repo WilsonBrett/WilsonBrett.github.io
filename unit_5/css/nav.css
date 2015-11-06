@@ -122,14 +122,14 @@ section#contact div div {
 	float: left;
 	width: 33.33%;
 }
-section#contact div.wrapperMain {
+section#contact div.wrapper {
 	padding-top: 3em;
 }
 section#contact p {
 	font-family: helvetica, sans-serif;
 }
 
-.wrapperMain {
+.wrapper {
 	width: 1200px;
 	margin: 0 auto;
 /* 	border: solid white 1px; */
