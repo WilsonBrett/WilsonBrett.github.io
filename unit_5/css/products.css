@@ -107,6 +107,9 @@ footer {
 	header > .wrapper > p {
 		display: none;
 	}
+	nav {
+		padding-bottom: 1em;
+	}
 	nav a {
 		display: block;
 		width: 50%;

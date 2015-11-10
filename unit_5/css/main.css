@@ -121,3 +121,45 @@ section#contact p {
 	height: 0;
 	clear: both;
 }
+@media screen and (max-width: 1040px) {
+	header h1 {
+		margin-top: 0;	
+	}
+	nav {
+		padding-bottom: 1em;
+	}
+	header > .wrapper > div {
+		float: none;
+		margin: 0 auto;
+	}
+	header > .wrapper > p {
+		display: none;
+	}
+	nav a {
+		display: block;
+		width: 50%;
+		margin: 0 auto;
+		padding: 0.25em 0;
+	}
+	nav a + a {
+		border-top: solid gray 1px;
+	}
+}
+@media screen and (max-width: 680px) {
+	section#hero {
+		display: none;
+	}
+	header {
+		position: relative;
+		top: 0;
+	}
+	section#about {
+		color: rgb(75,77,82);
+		background-color: rgb(211,232,205);
+	}
+} 
+@media screen and (min-width: 1800px) {
+	body {
+		font-size: 18px;
+	}
+}
