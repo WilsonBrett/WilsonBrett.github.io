@@ -41,12 +41,11 @@ header h1 {
 }
 header p  {
 	float: left;
-	width: 10%;
 	font-size: 5em;
 	background-color: rgb(55,75,78);
 	color: white; /*offwhite*/
 	border: solid rgb(50,50,50) .15em; /*orange*/
-	padding-top: .1em;
+	padding: 0 .25em;
 	font-family: 'Cinzel', georgia, serif;
 }
 header div div {

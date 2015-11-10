@@ -1,7 +1,7 @@
 * {margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-	font-size: 16px;
+	font-size: 16;
 	font-family: serif;
 }
 header {
@@ -19,11 +19,10 @@ header h1 {
 }
 header p  {
 	float: left;
-	width: 10%;
 	font-size: 5em;
 	background-color: rgb(55,75,78);
 	color: white; /*offwhite*/
-	padding-top: .1em;
+	padding: 0 .25em;
 	border: solid rgb(50,50,50) .15em; /*orange*/
 	font-family: 'Cinzel', georgia, serif;
 }
@@ -47,10 +46,8 @@ nav a:hover {
 	color: rgb(255,71,18) ;
 }
 section {
-	padding: 4em;
-	
+	padding: 4em;	
 }
-
 section.odd {
 	background-color: rgb(211,232,205);
 	color: rgb(75,77,82);
@@ -58,17 +55,6 @@ section.odd {
 section.even {
 	background-color: rgb(253,255,255);
 	color: rgb(75,77,82);
-}
-section div > div > img {
-	width: 100%;
-}
-section div > div > h2 {
-	font-family: helvetica, sans-serif;
-}
-section div > div > p {
-	font-family: arial,sans-serif;
-	line-height: 1.5em;
-	padding-top: 0.5em;
 }
 section.odd div > div {
 	float: left;
@@ -80,6 +66,18 @@ section.even div > div {
 	width: 25%;
 	padding: 0 1em;
 }
+section div > div > img {
+	display: block;
+	width: 100%;
+}
+section div > div > h2 {
+	font-family: helvetica, sans-serif;
+}
+section div > div > p {
+	font-family: arial,sans-serif;
+	line-height: 1.5em;
+	padding-top: 0.5em;
+}
 footer {
 	padding: 2em;
 	text-align: center;
@@ -88,7 +86,7 @@ footer {
 	clear: both;
 }
 .wrapper {
-	max-width: 1200px;
+	width: 90%;
 	margin: 0 auto;
 }
 .clearfix:after {
@@ -97,4 +95,82 @@ footer {
 	display: block;
 	height: 0;
 	clear: both;
+}
+@media screen and (max-width: 1040px) {
+	header h1 {
+		margin-top: 0;	
+	}
+	header > .wrapper > div {
+		float: none;
+		margin: 0 auto;
+	}
+	header > .wrapper > p {
+		display: none;
+	}
+	nav a {
+		display: block;
+		width: 50%;
+		margin: 0 auto;
+		padding: 0.25em 0;
+	}
+	nav a + a {
+		border-top: solid gray 1px;
+	}
+	section {
+		padding: 2em;
+	}
+	section.odd > .wrapper > div:first-child {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+		padding-bottom: 2em;
+	}
+	section.odd > .wrapper > div:first-child img {
+		display: block;
+		margin: 0 auto;
+		width: 50%;
+	}
+	section.odd > div > div + div {
+		width: 33.33%;
+	}
+	section.even > .wrapper > div:first-child {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+		padding-bottom: 2em;
+	}
+	section.even > .wrapper > div:first-child img {
+		display: block;
+		margin: 0 auto;
+		width: 50%;
+	}
+	section.even > div > div + div {
+		width: 33.33%;
+	}
+}
+@media screen and (max-width: 680px) {
+	section.odd > .wrapper > div:first-child {
+		display: none;
+	}
+	section.odd > div > div + div {
+		width: 100%;
+		padding-bottom: 1em;
+	}
+	section.even > .wrapper > div:first-child {
+		display: none;
+	}
+	section.odd > .wrapper > div:first-child img {
+		display: block;
+		margin: 0 auto;
+		width: 50%;
+	}
+	section.even > div > div + div {
+		width: 100%;
+		padding-bottom: 1em;
+	}
+} 
+@media screen and (min-width: 1800px) {
+	body {
+		font-size: 18px;
+	}
 }
