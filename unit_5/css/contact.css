@@ -19,12 +19,11 @@ header h1 {
 }
 header p  {
 	float: left;
-	width: 10%;
 	font-size: 5em;
 	background-color: rgb(55,75,78);
 	color: white; /*offwhite*/
+	padding: 0 .25em;
 	border: solid rgb(50,50,50) .15em; /*orange*/
-	padding-top: .1em;
 	font-family: 'Cinzel', georgia, serif;
 }
 header div div {
@@ -46,24 +45,6 @@ nav a:visited {
 nav a:hover {
 	color: rgb(255,71,18);
 }
-section#about {
-	background-color: rgb(69,84,70);
-	color: white;
-	padding: 3em;
-	border-top: black;
-}
-section#about h2 {
-	font-size: 2.5em;
-	font-family: 'cinzel',serif;
-	text-align: center;
-	letter-spacing: .1em;
-}
-section#about p {
-	font-family: sans-serif;
-	letter-spacing: .1em;
-	line-height: 1.5em;
-	padding-top: 2em;
-}
 footer {
 	padding: 2em;
 	text-align: center;
@@ -71,19 +52,16 @@ footer {
 	color: white;
 }
 section#contact {
-	width: 100%;
 	color: rgb(75,77,82);
 	background-color: rgb(211,232,205);
 	text-align: center;
 	padding: 3em;
 }
-section#contact div div {
-	float: left;
-	width: 33.33%;
+
+section#contact div + div {
+	padding-top: 2em;
 }
-section#contact div.wrapper {
-	padding-top: 3em;
-}
+
 section#contact h2 {
 	font-family: helvetica, sans-serif;
 }
@@ -100,4 +78,31 @@ section#contact p {
 	display: block;
 	height: 0;
 	clear: both;
+}
+@media screen and (max-width: 1040px) {
+	header h1 {
+		margin-top: 0;	
+	}
+	header > .wrapper > div {
+		float: none;
+		margin: 0 auto;
+	}
+	header > .wrapper > p {
+		display: none;
+	}
+	nav {
+		padding-bottom: 1em;
+	}
+	nav a {
+		display: block;
+		width: 50%;
+		margin: 0 auto;
+		padding: 0.25em 0;
+	}
+	nav a + a {
+		border-top: solid gray 1px;
+	}
+	section {
+		padding: 2em;
+	}
 }
