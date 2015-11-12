@@ -114,7 +114,8 @@ footer {
 		display: block;
 		width: 50%;
 		margin: 0 auto;
-		padding: 0.25em 0;
+		padding: 1em 0;
+		font-size: 1.25em;
 	}
 	nav a + a {
 		border-top: solid gray 1px;

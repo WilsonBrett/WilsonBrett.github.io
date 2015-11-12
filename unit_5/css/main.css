@@ -73,6 +73,39 @@ section#about {
 	padding: 3em;
 	border-top: black;
 }
+section#images > div {
+	width: 33.33%;
+	position: relative;
+	float: left;
+	padding: 1px;
+	
+}
+section#images > div img {
+	width: 100%;
+	display: block;
+	z-index: -1;
+}
+section#images > div > div {
+	position: absolute;
+	top: 0%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(50,50,50);
+	opacity: 0;
+	transition: opacity 1s;
+	color: white;
+	font-family: sans-serif;
+}
+section#images > div > div:hover {
+	opacity: .8;
+}
+section#images > div > div p {
+	text-align: center;
+	font-size: 2em;
+	padding: 3em;
+}
+
 section#about h2 {
 	font-size: 2.5em;
 	font-family: 'cinzel',serif;
@@ -116,7 +149,7 @@ section#contact p {
 }
 .clearfix:after {
 	content: ".";
-	visibility: hidden;
+	/*visibility: hidden;*/
 	display: block;
 	height: 0;
 	clear: both;
@@ -139,7 +172,8 @@ section#contact p {
 		display: block;
 		width: 50%;
 		margin: 0 auto;
-		padding: 0.25em 0;
+		padding: 1em 0;
+		font-size: 1.25em;
 	}
 	nav a + a {
 		border-top: solid gray 1px;
@@ -152,6 +186,10 @@ section#contact p {
 	header {
 		position: relative;
 		top: 0;
+	}
+	section#images > div {
+		float: none;
+		width: 100%;
 	}
 	section#about {
 		color: rgb(75,77,82);
