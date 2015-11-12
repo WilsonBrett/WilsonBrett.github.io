@@ -155,11 +155,15 @@ section#contact p {
 	clear: both;
 }
 @media screen and (max-width: 1040px) {
+	header {
+		position: relative;
+		top: 0;
+	}
+	section#hero {
+		display: none;
+	}
 	header h1 {
 		margin-top: 0;	
-	}
-	nav {
-		padding-bottom: 1em;
 	}
 	header > .wrapper > div {
 		float: none;
@@ -173,19 +177,14 @@ section#contact p {
 		width: 50%;
 		margin: 0 auto;
 		padding: 1em 0;
-		font-size: 1.25em;
 	}
 	nav a + a {
 		border-top: solid gray 1px;
 	}
 }
 @media screen and (max-width: 680px) {
-	section#hero {
-		display: none;
-	}
-	header {
-		position: relative;
-		top: 0;
+	nav a {
+		font-size: 1.25em;
 	}
 	section#images > div {
 		float: none;
