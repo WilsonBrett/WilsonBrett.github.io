@@ -107,15 +107,11 @@ footer {
 	header > .wrapper > p {
 		display: none;
 	}
-	nav {
-		padding-bottom: 1em;
-	}
 	nav a {
 		display: block;
 		width: 50%;
 		margin: 0 auto;
 		padding: 1em 0;
-		font-size: 1.25em;
 	}
 	nav a + a {
 		border-top: solid gray 1px;
@@ -153,6 +149,9 @@ footer {
 	}
 }
 @media screen and (max-width: 680px) {
+	nav a {
+		font-size: 1.25em;
+	}
 	section.odd > .wrapper > div:first-child {
 		display: none;
 	}

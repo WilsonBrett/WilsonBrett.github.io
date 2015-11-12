@@ -105,7 +105,6 @@ section#images > div > div p {
 	font-size: 2em;
 	padding: 3em;
 }
-
 section#about h2 {
 	font-size: 2.5em;
 	font-family: 'cinzel',serif;
@@ -123,24 +122,6 @@ footer {
 	text-align: center;
 	background-color: #4B4D52;
 	color: white;
-}
-/*BEGIN CONTACT CSS*/
-section#contact {
-	margin-top: 140px;
-	width: 100%;
-	background-color: #F7D18E;
-	text-align: center;
-	padding: 3em;
-}
-section#contact div div {
-	float: left;
-	width: 33.33%;
-}
-section#contact div.wrapper {
-	padding-top: 3em;
-}
-section#contact p {
-	font-family: helvetica, sans-serif;
 }
 .wrapper {
 	max-width: 1200px;

@@ -3,6 +3,7 @@
 body {
 	font-size: 16px;
 	font-family: serif;
+	background-color: rgb(211,232,205);
 }
 header {
 	width: 100%;
@@ -46,6 +47,9 @@ nav a:hover {
 	color: rgb(255,71,18);
 }
 footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	padding: 2em;
 	text-align: center;
 	background-color: #4B4D52;
@@ -53,15 +57,12 @@ footer {
 }
 section#contact {
 	color: rgb(75,77,82);
-	background-color: rgb(211,232,205);
 	text-align: center;
 	padding: 3em;
 }
-
 section#contact div + div {
 	padding-top: 2em;
 }
-
 section#contact h2 {
 	font-family: helvetica, sans-serif;
 }
