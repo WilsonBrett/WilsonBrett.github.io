@@ -47,8 +47,6 @@ nav a:hover {
 	color: rgb(255,71,18);
 }
 footer {
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	padding: 2em;
 	text-align: center;
@@ -88,7 +86,7 @@ section#contact p {
 		float: none;
 		margin: 0 auto;
 	}
-	header > .wrapper > p {
+	header > .wrapper > a {
 		display: none;
 	}
 	nav {
