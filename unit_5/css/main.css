@@ -103,7 +103,7 @@ section#images > div > div:hover {
 section#images > div > div p {
 	text-align: center;
 	font-size: 2em;
-	padding: 3em;
+	padding: 10%;
 }
 section#about h2 {
 	font-size: 2.5em;
