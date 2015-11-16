@@ -28,7 +28,7 @@ header {
 	position: absolute;
 	top: 3em;
 	width: 100%;
-	background-color: rgb(69,84,70);
+	background-color: rgb(11,155,37);
 	text-align: center;
 }
 header h1 {
@@ -42,11 +42,12 @@ header h1 {
 header p  {
 	float: left;
 	font-size: 5em;
-	background-color: rgb(55,75,78);
-	color: white; /*offwhite*/
+	background-color: white;
+	color: rgb(11,155,37); /*offwhite*/
 	border: solid rgb(50,50,50) .15em; /*orange*/
 	padding: 0 .25em;
 	font-family: 'Cinzel', georgia, serif;
+	border-radius: 3px;
 }
 header div div {
 	float: left;
@@ -68,7 +69,7 @@ nav a:hover {
 	color: rgb(255,71,18);
 }
 section#about {
-	background-color: rgb(69,84,70);
+	background-color: rgb(11,155,37);
 	color: white;
 	padding: 3em;
 	border-top: black;
@@ -78,7 +79,11 @@ section#images > div {
 	position: relative;
 	float: left;
 	padding: 1px;
-	
+	transition: all .5s;
+}
+section#images > div:hover {
+	transform: scale(1.1);
+	z-index: 1;
 }
 section#images > div img {
 	width: 100%;
@@ -87,10 +92,10 @@ section#images > div img {
 }
 section#images > div > div {
 	position: absolute;
-	top: 0%;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	top: 1px;
+	bottom: 1px;
+	left: 1px;
+	right: 1px;
 	background-color: rgb(50,50,50);
 	opacity: 0;
 	transition: opacity 1s;
@@ -98,7 +103,7 @@ section#images > div > div {
 	font-family: sans-serif;
 }
 section#images > div > div:hover {
-	opacity: .8;
+	opacity: 0.7;
 }
 section#images > div > div p {
 	text-align: center;
@@ -112,15 +117,17 @@ section#about h2 {
 	letter-spacing: .1em;
 }
 section#about p {
+	float: left;
+	width: 33.33%;
 	font-family: sans-serif;
 	letter-spacing: .1em;
-	line-height: 1.5em;
-	padding-top: 2em;
+	line-height: 2em;
+	padding: 2em 1.5em 0;
 }
 footer {
 	padding: 2em;
 	text-align: center;
-	background-color: #4B4D52;
+	background-color: rgb(40,40,40);
 	color: white;
 }
 .wrapper {
@@ -130,7 +137,7 @@ footer {
 }
 .clearfix:after {
 	content: ".";
-	/*visibility: hidden;*/
+	visibility: hidden;
 	display: block;
 	height: 0;
 	clear: both;
@@ -163,6 +170,10 @@ footer {
 	nav a + a {
 		border-top: solid gray 1px;
 	}
+	section#about > div > p {
+		float: none;
+		width: 100%;
+	}
 }
 @media screen and (max-width: 680px) {
 	nav a {
@@ -175,6 +186,13 @@ footer {
 	section#about {
 		color: rgb(75,77,82);
 		background-color: rgb(211,232,205);
+	}
+	section#images > div:hover {
+		transform: scale(1);
+		z-index: 1;
+	}
+	section#images > div > div:hover {
+		opacity: 0;
 	}
 } 
 @media screen and (min-width: 1800px) {
