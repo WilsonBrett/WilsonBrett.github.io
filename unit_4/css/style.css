@@ -151,18 +151,18 @@ section#extras ul {
 }
 /*BEGIN HOURS*/
 section#hours {
-	padding: 3em;
+	padding: 4em;
 	background-color: rgb(254, 203, 90);
 	color: black;
 }
-section#hours h2 {
+section#hours div h2 {
 	text-align: center;
 }
 section#hours div div {
 	width: 50%;
 	float: left;
 	vertical-align: top;
-	padding: 2em;
+	padding: 2em 2em 0;
 }
 section#hours div h3 {
 	font-variant: small-caps;
@@ -216,7 +216,7 @@ footer {
 }*/
 @media screen and (max-width: 720px) {
 	body {
-		font-size: 12px;
+		font-size: 16px;
 	}
 	header {
 		top: 0;
@@ -242,22 +242,26 @@ footer {
 		float: none;
 		width: 100%;
 	}
+	section#hours {
+		padding: 2em;
+	}
 	section#hours div div {
 		width: 100%;
 		float: none;
-		padding: 2em;
 	}
 	section#testimonials div div {
 		float: none;
 		width: 100%;
-		padding: 2em;
 		text-align: left;
 	}
 	.wrapper {
 		width: 80%;
 	}
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 550px) {
+		section#hours div div {
+			padding: 1em 0 0;
+		}
 		nav a {
 			float: none;
 			width: 100%;
