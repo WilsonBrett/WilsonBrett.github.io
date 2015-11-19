@@ -100,12 +100,15 @@ section#hero span {
 }
 /*BEGIN IMAGES*/
 section#images {
-	padding-top: 1px;
+	padding: 1px;
+}
+section#images > a + a img {
+	padding-left: 1px;
 }
 section#images img {
 	float: left;
-	padding: 0.1em;
 	width: 25%;
+	display: block;
 }
 /*BEGIN MENU*/
 section#menu {
@@ -240,6 +243,10 @@ footer {
 		float: none;
 		width: 100%;
 	}
+	section#images > a + a img {
+		padding-top: 1px;
+		padding-left: 0;
+	}
 	section#menu {
 		padding: 2em;
 	}
@@ -269,6 +276,9 @@ footer {
 	}
 }
 @media screen and (max-width: 550px) {
+		div.foodPosition {
+			padding: 0;
+		}
 		section#hours div div {
 			padding: 1em 0 0;
 		}
@@ -284,5 +294,8 @@ footer {
 		}
 		nav a + a {
 			border-top: solid grey 1px;
+		}
+		.wrapper {
+			width: 95%;
 		}
 	}
