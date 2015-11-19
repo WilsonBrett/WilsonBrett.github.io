@@ -69,7 +69,7 @@ nav a {
 	letter-spacing: 1px;
 	font-variant: small-caps;
 	font-weight: 300;
-	min-width: 25%;
+	width: 25%;
 	display: block;
 	float: left;
 }
@@ -108,43 +108,48 @@ section#images img {
 	width: 25%;
 }
 /*BEGIN MENU*/
-section#menu section {
-	float: left;
-	padding: 2em;
-	width: 50%;
-}
-section#meals {
-	color: rgb(254,203,0);
+section#menu {
+	padding: 4em;
 }
 section#menu h2 {
 	letter-spacing: 3px;
 }
-section#meals div {
-	margin: 1.25em auto;
+div.foodPosition {
+	float: left;
+	padding: 0 2em;
+	width: 50%;
 }
-section#meals h2 {
+div#meals {
+	color: rgb(254,203,0);
+}
+div#meals div {
+	margin: 1.25em auto 0;
+}
+div#meals h2 {
 	text-align: center;
 }
-section#meals h3 {
+div#meals h3 {
 	font-variant: small-caps;
 	letter-spacing: 2px;
 }
-section#meals div p {
+div#meals div p {
 	letter-spacing: 1px;
 	text-align: left;
 }
-section#extras {
+div#extras {
 	color: black;
 }
-section#extras div {
+div#extras div {
 	vertical-align: top;
 	text-align: left;
 	background-color: rgb(254,203,90);
 	border-radius: 8px;
-	margin-bottom: 0.5em;
 	padding: 1.5em;
 }
-section#extras ul {
+div#sides {
+	margin-bottom: 0.5em;
+}
+div#extras ul {
 	list-style-type: none;
 	padding: .5em .5em 0;
 	font-family: 'Muli', sans-serif;
@@ -172,26 +177,22 @@ section#hours div p {
 }
 /*BEGIN TESTIMONIALS*/
 section#testimonials {
-	padding: 3em;
-	color: white;
+	padding: 4em;
 	background-color: rgb(61,111,255);
+	color: white;
 }
-section#testimonials h2 {
+section#testimonials div h2 {
 	text-align: center;
 }
 section#testimonials div div {
 	float: left;
 	width: 33%;
-	padding: 2em;
+	padding: 2em 2em 0;
 	text-align: left;
 }
 section#testimonials div h4 {
 	font-variant: small-caps;
 	margin-bottom: .5em;
-}
-section#testimonials div p {
-	max-height: 150px;
-	overflow: hidden;
 }
 footer {
 	width: 100%;
@@ -214,13 +215,11 @@ footer {
 .clearfix {
 	overflow: auto;
 }*/
-@media screen and (max-width: 720px) {
-	body {
-		font-size: 16px;
-	}
+@media screen and (max-width: 800px) {
 	header {
 		top: 0;
 		position: relative;
+		background-color: black;
 	}
 	header div#headMid {
 		float: none;
@@ -231,6 +230,9 @@ footer {
 		float: none;
 		display: none;
 	}
+	nav a {
+		font-size: 18px;
+	}
 	section#hero {
 		display: none;
 	}
@@ -238,9 +240,15 @@ footer {
 		float: none;
 		width: 100%;
 	}
-	section#menu section {
+	section#menu {
+		padding: 2em;
+	}
+	div.foodPosition {
 		float: none;
 		width: 100%;
+	}
+	div#extras {
+		margin-top: 2em;
 	}
 	section#hours {
 		padding: 2em;
@@ -249,10 +257,12 @@ footer {
 		width: 100%;
 		float: none;
 	}
+	section#testimonials {
+		padding: 2em;
+	}
 	section#testimonials div div {
 		float: none;
 		width: 100%;
-		text-align: left;
 	}
 	.wrapper {
 		width: 80%;
@@ -262,9 +272,17 @@ footer {
 		section#hours div div {
 			padding: 1em 0 0;
 		}
+		section#testimonials div div {
+			padding: 1em 0 0;
+		}
+		section#testimonials div h4 {
+			margin-bottom: .25em;
+		}
 		nav a {
 			float: none;
 			width: 100%;
-			border-bottom: solid grey 1px;
+		}
+		nav a + a {
+			border-top: solid grey 1px;
 		}
 	}
