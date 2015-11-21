@@ -4,6 +4,7 @@ body {
 	font-size: 16px;
 	font-family: serif;
 	background-color: rgb(211,232,205);
+	padding-bottom: 3em;
 }
 header {
 	position: relative;
@@ -50,6 +51,9 @@ nav a:hover {
 	color: rgb(255,71,18);
 }
 footer {
+	position: fixed;
+	bottom: 0;
+	
 	width: 100%;
 	padding: 2em;
 	text-align: center;
