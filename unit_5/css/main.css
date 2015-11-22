@@ -75,29 +75,27 @@ section#about {
 	padding: 3em;
 	border-top: black;
 }
+section#images {
+	padding: 1px 1px 1px 0;
+	background-color: white;
+}
 section#images > div {
 	width: 33.33%;
 	position: relative;
 	float: left;
-	padding: 1px;
-	transition: all .5s;
-}
-section#images > div:hover {
-	transform: scale(1.1);
-	z-index: 1;
+	padding-left: 1px;
 }
 section#images > div img {
 	width: 100%;
 	display: block;
-	z-index: -1;
 }
 section#images > div > div {
 	position: absolute;
-	top: 1px;
-	bottom: 1px;
-	left: 1px;
-	right: 1px;
-	background-color: rgb(50,50,50);
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: maroon;
 	opacity: 0;
 	transition: opacity 1s;
 	color: white;
