@@ -19,11 +19,13 @@ h2, h3, h4, h5, h6 {
 }
 section#hero {
 	height: 90vh;
+	position: relative;
 	background-image: url('../images/main_lego.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	z-index: -1;
 }
 /*BEGIN HEADER*/
 header {
