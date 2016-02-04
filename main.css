@@ -7,34 +7,23 @@ body {
 	background-position: center;
 	font-size: 16px;
 }
-#header {
+header {
 	width: 100%;
-	margin: 0 auto;
-	padding-top: 2em;
+	padding: 1em;
+	background-color: rgba(0,0,0,0.5)
 	
-}
-#headWrap {
-	width: 80%;
-	margin: 0 auto;
-}
-#imgWrapper {
-	float: left;
-	width: 20%;
 }
 img {
 	border-radius: 50%;
 	border: 5px solid white;
-	width: 100%;
-}
-#descripWrap {
+	width: 150px;
 	float: left;
-	width: 80%;
-	padding: 1em 7em;
+	margin-left: 2em;
 }
-h1 {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 700;
-	font-size: 32px;
+h1#name {
+	font-family: 'Carter One', serif;
+	font-size: 6em;
+	color: rgb(200, 40, 62);
 	text-align: center;
 }
 h2 {
@@ -58,17 +47,20 @@ footer {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	background: black;
+	background-color: rgba(0,0,0,0.5);
 	color: white;
 	padding: 10px 0;
 }
 footer ul {
 	list-style: none;
 	text-align: center;
+	font-family: sans-serif;
+	padding: 1.75em;
 }
 li {
 	display: inline;
 	margin: 0 10em;
+
 }
 .clearfix:after {
 	content: ".";
