@@ -1,52 +1,62 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 			
 body {
-	height: 100vh;
-	background-image: url('back.jpg');
-	background-size: cover;
-	background-position: center;
 	font-size: 16px;
 }
 header {
 	width: 100%;
 	padding: 1em;
-	background-color: rgba(0,0,0,0.5)
-	
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
 }
-img {
-	border-radius: 50%;
-	border: 5px solid white;
-	width: 150px;
+header div.wrapper {
+	display: block;
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+div#logo_wrap {
+	display: block;
+	width: 10%;
 	float: left;
-	margin-left: 2em;
+}
+div#logo_wrap img {
+	display: block;
+	border-radius: 50%;
+	border: 5px solid yellow;
+	width: 100%;
+}
+div#banner_wrap {
+	display: block;
+	width: 85%;
+	text-align: center;
 }
 h1#name {
 	font-family: 'Carter One', serif;
-	font-size: 6em;
-	color: rgb(200, 40, 62);
-	text-align: center;
+	font-size: 5em;
+	color: yellow;
+	/*color: rgb(200, 40, 62);*/
 }
-h2 {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 400;
-	text-align: center;
-	padding-bottom: 1em;
+section#background {
+	height: 100vh;
+	background-image: url('back.jpg');
+	background-size: cover;
+	background-position: center;
 }
-p {
-	font-family: helvetica, sans-serif;
-	line-height: 2em;
+section#projects {
+	background-color: white;
+	height: 500px;
 }
-a {
-	text-decoration: none;
-	color: blue;
+#projects a {
+		text-decoration: none;
+		color: blue;
 }
-a:hover {
+#projects a:hover {
 	color: red;
 }
 footer {
 	width: 100%;
-	position: absolute;
-	bottom: 0;
 	background-color: rgba(0,0,0,0.5);
 	color: white;
 	padding: 10px 0;
@@ -57,10 +67,9 @@ footer ul {
 	font-family: sans-serif;
 	padding: 1.75em;
 }
-li {
+footer ul li {
 	display: inline;
 	margin: 0 10em;
-
 }
 .clearfix:after {
 	content: ".";
