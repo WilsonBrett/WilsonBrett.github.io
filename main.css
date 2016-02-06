@@ -46,7 +46,7 @@ nav li a:hover {
 }
 #hero {
 	height: 75vh;
-	background-image: url('carronDescent.jpg');
+	background-image: url('carron.jpg');
 	background-size: cover;
 	background-position: center;
 }
