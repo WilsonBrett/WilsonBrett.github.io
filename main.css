@@ -5,71 +5,96 @@ body {
 }
 header {
 	width: 100%;
-	padding: 1em;
-	background-color: rgba(0,0,0,0.5);
-	position: absolute;
-	top: 0;
+	padding: 1em 1em .5em;
+	background-color: rgb(50,50,50);
 }
-header div.wrapper {
-	display: block;
-	max-width: 1200px;
-	margin: 0 auto;
-
-}
-div#logo_wrap {
-	display: block;
-	width: 10%;
+div#logo_box {
+	width: 25%;
 	float: left;
 }
-div#logo_wrap img {
+div#logo_box img {
 	display: block;
 	border-radius: 50%;
-	border: 5px solid yellow;
-	width: 100%;
+	border:3px solid red;
+	width: 175px;
+	margin: 0 auto;
 }
-div#banner_wrap {
+div#banner_box {
 	display: block;
-	width: 85%;
+	width: 75%;
 	text-align: center;
 }
 h1#name {
 	font-family: 'Carter One', serif;
-	font-size: 5em;
-	color: yellow;
+	font-size: 4em;
+	color: red;
 	/*color: rgb(200, 40, 62);*/
 }
-section#background {
-	height: 100vh;
-	background-image: url('back.jpg');
+nav li {
+	display: inline;
+	padding: 0 1em;
+	font-size: 1.2em;
+	font-family: sans-serif;
+}
+nav li a {
+	text-decoration: none;
+	color: yellow;
+	font-variant: small-caps;
+}
+nav li a:hover {
+	color: red;
+}
+#hero {
+	height: 75vh;
+	background-image: url('carronDescent.jpg');
 	background-size: cover;
 	background-position: center;
 }
-section#projects {
+#projects {
 	background-color: white;
-	height: 500px;
+	padding: 2em;
+}
+#projects h2 {
+	text-align: center;
+	font-family: helvetica, sans-serif;
+	font-size: 3em;
+	color: rgb(50,50,50);
+}
+.projects_group {
+	width: 75%;
+	background-color: rgb(50,50,50);
+	padding: 2em;
+	margin: 1em auto 0;
 }
 #projects a {
-		text-decoration: none;
-		color: blue;
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 50%;
+	font-size: 1.5em;
+}
+#projects a + a {
+	margin-top: 1em;
 }
 #projects a:hover {
 	color: red;
 }
 footer {
 	width: 100%;
-	background-color: rgba(0,0,0,0.5);
-	color: white;
-	padding: 10px 0;
+	background-color: rgb(50,50,50);
+	color: rgb(246,38,174);
 }
-footer ul {
-	list-style: none;
+footer h3 {
 	text-align: center;
 	font-family: sans-serif;
-	padding: 1.75em;
+	padding: 1em;
+	font-family: cursive, sans-serif;
+	font-size: 3em;
 }
-footer ul li {
-	display: inline;
-	margin: 0 10em;
+.wrapper {
+	display: block;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 .clearfix:after {
 	content: ".";
