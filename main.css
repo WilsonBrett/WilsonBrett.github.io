@@ -5,7 +5,7 @@ body {
 }
 header {
 	width: 100%;
-	padding: 1em 1em .5em;
+	padding: 1rem 1rem .5rem;
 	background-color: rgb(50,50,50);
 }
 div#logo_box {
@@ -26,14 +26,14 @@ div#banner_box {
 }
 h1#name {
 	font-family: 'Carter One', serif;
-	font-size: 4em;
+	font-size: 4rem;
 	color: red;
 	/*color: rgb(200, 40, 62);*/
 }
 nav li {
 	display: inline;
-	padding: 0 1em;
-	font-size: 1.2em;
+	padding: 0 1rem;
+	font-size: 1.2rem;
 	font-family: sans-serif;
 }
 nav li a {
@@ -50,34 +50,40 @@ nav li a:hover {
 	background-size: cover;
 	background-position: center;
 }
-section.content {
+section.major {
 	padding: 2rem;
+	background-color: #EDE2CE;
 }
-section.content h2 {
+section.major + section.major {
+	border-top: 1px solid rgba(77,77,77,.2);
+}
+section.major h2 {
 	text-align: center;
 	font-family: helvetica, sans-serif;
-	font-size: 3rem;	
+	font-size: 3rem;
+	color: rgb(50,50,50);	
 }
-#projects {
-	background-color: white;
-}
-#projects h2 {
-	color: rgb(50,50,50);
-}
-.projects_group {
+.content_group {
 	width: 75%;
+	padding: 2rem;
+	margin: 1rem auto 0;
 	background-color: rgb(50,50,50);
-	padding: 2em;
-	margin: 1em auto 0;
+	border-radius: 5px;
+	font-family: helvetica, sans-serif;
+	font-weight: 200;
+	color: white;
+	font-size: 1.2rem;
+	line-height: 1.75rem;
+	
 }
 #projects a {
 	text-decoration: none;
-	color: white;
 	display: block;
-	font-size: 1.5em;
+	color: white;
+	font-size: 1.5rem;
 }
 #projects a + a {
-	margin-top: 1em;
+	margin-top: 1rem;
 }
 #projects a:hover {
 	color: red;
@@ -90,9 +96,9 @@ footer {
 footer h3 {
 	text-align: center;
 	font-family: sans-serif;
-	padding: 1em;
+	padding: 1rem;
 	font-family: cursive, sans-serif;
-	font-size: 3em;
+	font-size: 3rem;
 }
 .wrapper {
 	display: block;
