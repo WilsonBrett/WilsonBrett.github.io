@@ -50,14 +50,18 @@ nav li a:hover {
 	background-size: cover;
 	background-position: center;
 }
-#projects {
-	background-color: white;
-	padding: 2em;
+section.content {
+	padding: 2rem;
 }
-#projects h2 {
+section.content h2 {
 	text-align: center;
 	font-family: helvetica, sans-serif;
-	font-size: 3em;
+	font-size: 3rem;	
+}
+#projects {
+	background-color: white;
+}
+#projects h2 {
 	color: rgb(50,50,50);
 }
 .projects_group {
@@ -70,7 +74,6 @@ nav li a:hover {
 	text-decoration: none;
 	color: white;
 	display: block;
-	width: 50%;
 	font-size: 1.5em;
 }
 #projects a + a {
