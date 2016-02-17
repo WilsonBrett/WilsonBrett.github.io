@@ -2,47 +2,71 @@
 			
 body {
 	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 header {
 	width: 100%;
 	padding: 1rem 1rem .5rem;
 	background-color: rgb(50,50,50);
 }
-div#logo_box {
-	width: 25%;
-	float: left;
-}
-div#logo_box img {
-	display: block;
+header img {
+	position: absolute;
+	top: 20px;
+	left: 100px;
 	border-radius: 50%;
-	border:3px solid red;
+	border:3px solid white;
 	width: 175px;
 	margin: 0 auto;
 }
-div#banner_box {
-	display: block;
-	width: 75%;
-	text-align: center;
+header div {
+	float: right;
+	width: 485px;
 }
-h1#name {
-	font-family: 'Carter One', serif;
-	font-size: 4rem;
-	color: red;
-	/*color: rgb(200, 40, 62);*/
+nav {
+	float: right;	
+	list-style-type: none;
 }
-nav li {
-	display: inline;
+nav a {
 	padding: 0 1rem;
 	font-size: 1.2rem;
-	font-family: sans-serif;
-}
-nav li a {
+	font-family: 'Source Sans Pro', sans-serif;
 	text-decoration: none;
-	color: yellow;
+	color: lightblue;
 	font-variant: small-caps;
+	font-weight: 400;
+
 }
-nav li a:hover {
-	color: red;
+nav a:hover {
+	color: white;
+}
+header div h2 {
+	color: yellow;
+	font-size: 2.5rem;
+	float: right;
+	text-align: right;
+	padding: 1rem 1rem 0;
+	clear: right;
+	width: 100%;
+	font-weight: 300;
+}
+h1 {
+	font-family: 'Source Sans Pro', serif;
+	font-size: 4rem;
+	color: white;
+	display: inline;
+	position: relative;
+	left: 275px;
+	top: 20px;
+}
+h1 span {
+	font-weight: 300;
+}
+section h2 {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 3rem;
+	color: rgb(50,50,50);
 }
 #hero {
 	height: 75vh;
@@ -57,12 +81,7 @@ section.major {
 section.major + section.major {
 	border-top: 1px solid rgba(77,77,77,.2);
 }
-section.major h2 {
-	text-align: center;
-	font-family: helvetica, sans-serif;
-	font-size: 3rem;
-	color: rgb(50,50,50);	
-}
+
 .content_group {
 	width: 75%;
 	padding: 2rem;
@@ -100,9 +119,14 @@ footer h3 {
 	font-family: cursive, sans-serif;
 	font-size: 3rem;
 }
+section.odd {
+	background-color: rgb(230,230,230); /*lightgrey*/
+}
+section.even {
+	background-color: white;
+}
 .wrapper {
-	display: block;
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
 }
 .clearfix:after {
