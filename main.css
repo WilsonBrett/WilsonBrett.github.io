@@ -61,48 +61,35 @@ h1 {
 h1 span {
 	font-weight: 300;
 }
-section h2 {
-	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
-	font-size: 3rem;
-	color: rgb(50,50,50);
-}
-#hero {
+div#hero {
 	height: 75vh;
 	background-image: url('carron.jpg');
 	background-size: cover;
 	background-position: center;
 }
-section.major {
+section {
 	padding: 2rem;
 	background-color: #EDE2CE;
+	color: rgb(50,50,50);
 }
-section.major + section.major {
+section + section {
 	border-top: 1px solid rgba(77,77,77,.2);
 }
-
-.content_group {
-	width: 75%;
-	padding: 2rem;
-	margin: 1rem auto 0;
-	background-color: rgb(50,50,50);
-	border-radius: 5px;
-	font-family: helvetica, sans-serif;
-	font-weight: 200;
-	color: white;
-	font-size: 1.2rem;
-	line-height: 1.75rem;
-	
+section h2 {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 3rem;
+	margin-bottom: 2rem;
 }
+
 #projects a {
 	text-decoration: none;
 	display: block;
-	color: white;
-	font-size: 1.5rem;
+	color: rgb(50,50,50);
 }
 #projects a + a {
-	margin-top: 1rem;
+	margin-top: .5rem;
 }
 #projects a:hover {
 	color: red;
@@ -126,7 +113,7 @@ section.even {
 	background-color: white;
 }
 .wrapper {
-	width: 1200px;
+	width: 850px;
 	margin: 0 auto;
 }
 .clearfix:after {
