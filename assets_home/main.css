@@ -4,6 +4,9 @@ body {
 	font-size: 16px;
 	font-family: 'Source Sans Pro', sans-serif;
 }
+a {
+	text-decoration: none;
+}
 header {
 	width: 100%;
 	padding: 1rem 1rem .5rem;
@@ -75,6 +78,33 @@ section {
 section + section {
 	border-top: 1px solid rgba(77,77,77,.2);
 }
+section#projects > div {
+	width: 1200px;
+	background-color: rgb(230,230,230);;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2rem 0 1rem;
+}
+section div.project_group {
+	display: inline-block;
+	margin: 0 1rem 1rem;
+	text-align: left;
+}
+.project_group > a:last-child {
+	text-decoration: none;	
+	font-weight: 300;
+	padding: .5rem .5rem 0;
+	color: rgb(50,50,50);
+	display: inline-block;
+}
+.project_group a:hover {
+	color: red;
+}
+.project_group img {
+	display: block;
+	width: 325px;
+	height: 275px;
+}
 section h2 {
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -82,21 +112,10 @@ section h2 {
 	font-size: 3rem;
 	margin-bottom: 2rem;
 }
-section#about p {
+section p {
 	line-height: 2rem;
 	font-weight: 300;
 	font-size: 1.1rem;
-}
-#projects a {
-	text-decoration: none;
-	display: block;
-	color: rgb(50,50,50);
-}
-#projects a + a {
-	margin-top: .5rem;
-}
-#projects a:hover {
-	color: red;
 }
 footer {
 	width: 100%;
