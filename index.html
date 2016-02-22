@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang='en' ng-app='HomePageApp'>
 	<head>
-		<title>Brett's HomePage</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Brett Wilson Rocks!</title>
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
 		<!--bootstrap css breaks layout-->
 		<!--<link href='assets_home/bootstrap/bootstrap.min.css'rel='stylesheet' type='text/css'>-->
 		<link href='assets_home/main.css' rel='stylesheet' type='text/css'>
 		<link href='assets_home/icon.png' rel='icon' type='image/png'>
-		<script src='assets_home/angular/angular.min.js'></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js'></script>
+		<script src='assets_home/javascripts/app.js' type='text/javascript'></script>
+		<script src='assets_home/javascripts/skillsController.js'></script>
 	</head>
 	<body>
 		<header class='clearfix'>
@@ -67,20 +72,15 @@
 					</div>
 				</div>
 			</section>
-			<section id='skills' class='odd'>
+			<section id='skills' class='odd' ng-controller='SkillsController as skills'>
 				<div class='wrapper'>
 					<h2>Skills</h2>
 					<ul>
-						<li>Ruby/Rails/ActiveRecord/Sinatra</li>
-						<li>SQL/PSQL/MYSQL</li>
-						<li>Node/Express/Mongoose</li>
-						<li>MongoDB</li>
-						<li>Javascript/jQuery/AJAX/JSON/API's</li>
-						<li>Angular/React</li>					
-						<li>HTML5, CSS3, Bootstrap, SASS/LESS</li>
-						<li>Git/Github</li>
-						<li>Excel/Pivot tables/VBA</li>
+						<li ng-repeat="skillGroup in skills.skillGroups">
+							<a href ng-click='skills.setTab(2)' ng-class='{active: true}'>{{skillGroup.title}}</a>
+						</li>
 					</ul>
+
 				</div>
 			</section>
 			<section id='experience' class='even'>
@@ -101,6 +101,6 @@
 		</footer>
 		<script src='assets_home/jquery/jquery-2.2.0.min.js'></script>
 		<script src='assets_home/bootstrap/bootstrap.min.js'></script>
-		<script src='assets_home/main.js'></script>
+		<script src='assets_home/javascripts/main.js'></script>
 	</body>
 </html>
