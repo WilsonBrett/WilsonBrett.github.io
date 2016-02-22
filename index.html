@@ -30,11 +30,26 @@
 				<h1>Brett <span>Wilson</span></h1>
 		</header>
 			<div id='hero'></div>
-			<section id='about' class='odd'>
+			<section id='about' class='even'>
 				<div class='wrapper'>
 					<h2>About Me</h2>
 						<p>I've been interested in web development for years and after spending 4 years in advertising finance I decided to take the plunge and enroll in General Assembly's web development immersion program. I've learned a great deal about web and application development over the last year am eager to put my full stack skills into production! I have a passion for data driven applications that can change the way people work and provide the timely information needed to make everyday decisions. I invite you to spend some time with my portfolio projects below.</p><br />
 						<p>Thanks for visiting!</p>
+				</div>
+			</section>
+			<section id='skills' class='odd' ng-controller='SkillsController as skills'>
+				<div class='wrapper'>
+					<h2>Skills</h2>
+					<ul>
+						<li ng-repeat="skillGroup in skills.skillGroups">
+							<a href ng-click='skills.setTab(skillGroup.title)' ng-class='{active: skills.isSet(skillGroup.title)}'>{{skillGroup.title}}</a>
+						</li>
+					</ul>
+					<div>
+						<ul ng-repeat='skillGroup in skills.skillGroups' ng-show='skills.isSet(skillGroup.title)'>
+							<li ng-repeat='item in skillGroup.items'>{{item}}</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 			<section id='projects' class='even clearfix'>
@@ -69,21 +84,6 @@
 							<img src='assets_home/project_thumbs/graise.png'>
 						</a>
 						<a href='https://github.com/WilsonBrett/WilsonBrett.github.io/tree/master/unit_5' target='_blank'>Github</a>
-					</div>
-				</div>
-			</section>
-			<section id='skills' class='odd' ng-controller='SkillsController as skills'>
-				<div class='wrapper'>
-					<h2>Skills</h2>
-					<ul>
-						<li ng-repeat="skillGroup in skills.skillGroups">
-							<a href ng-click='skills.setTab(skillGroup.title)' ng-class='{active: skills.isSet(skillGroup.title)}'>{{skillGroup.title}}</a>
-						</li>
-					</ul>
-					<div>
-						<ul ng-repeat='skillGroup in skills.skillGroups' ng-show='skills.isSet(skillGroup.title)'>
-							<li ng-repeat='item in skillGroup.items'>{{item}}</li>
-						</ul>
 					</div>
 				</div>
 			</section>

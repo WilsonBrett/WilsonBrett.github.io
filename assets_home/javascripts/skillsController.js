@@ -7,7 +7,7 @@
 		this.skillGroups = [
 			{title: 'Front End', items: ['HTML5','CSS3','Bootstrap','JS/jQuery/Ajax','Angular']},
 			{title: 'Back End', items: ['Node.js/Express/Mongoose','Ruby/Rails/ActiveRecord','SQL/NoSQL']},
-			{title: 'Workflow', items: ['Git/Githuub','Agile/Waterfall','Unix Terminal']},
+			{title: 'Workflow', items: ['Git/Github','Agile/Waterfall','Unix Terminal']},
 			{title: 'Finance', items: ['Excel','Pivot Tables','VBA','Budgeting/Forecasting']}
 		];
 
