@@ -77,10 +77,14 @@
 					<h2>Skills</h2>
 					<ul>
 						<li ng-repeat="skillGroup in skills.skillGroups">
-							<a href ng-click='skills.setTab(2)' ng-class='{active: true}'>{{skillGroup.title}}</a>
+							<a href ng-click='skills.setTab(skillGroup.title)' ng-class='{active: skills.isSet(skillGroup.title)}'>{{skillGroup.title}}</a>
 						</li>
 					</ul>
-
+					<div>
+						<ul ng-repeat='skillGroup in skills.skillGroups' ng-show='skills.isSet(skillGroup.title)'>
+							<li ng-repeat='item in skillGroup.items'>{{item}}</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 			<section id='experience' class='even'>

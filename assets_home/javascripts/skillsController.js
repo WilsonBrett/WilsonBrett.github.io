@@ -5,33 +5,22 @@
 
 	app.controller('SkillsController', function(){
 		this.skillGroups = [
-			{title: 'Front End', items: ['HTML5','CSS3','Bootstrap']},
-			{title: 'Back End', items: ['Node.js','Ruby','SQL']},
-			{title: 'Workflow', items: ['Git','Github','Unix Terminal']},
-			{title: 'Finance', items: ['Excel','Pivot Tables','VBA']}
+			{title: 'Front End', items: ['HTML5','CSS3','Bootstrap','JS/jQuery/Ajax','Angular']},
+			{title: 'Back End', items: ['Node.js/Express/Mongoose','Ruby/Rails/ActiveRecord','SQL/NoSQL']},
+			{title: 'Workflow', items: ['Git/Githuub','Agile/Waterfall','Unix Terminal']},
+			{title: 'Finance', items: ['Excel','Pivot Tables','VBA','Budgeting/Forecasting']}
 		];
 
-		var tab = 1;
+		this.tab = this.skillGroups[0].title;
 			
-		function setTab(newTab){
-			//this.tab = newTab;
-			console.log('hi');
-		};
-	});
-
-	app.controller('TabController', function(){
-		//default active tab
-		this.tab = 1;
-
-		//when skill tabs clicked active tab gets set
-		function setTab(tabTitle) {
-			console.log(tabTitle);
-			this.tab = tabTitle;
-			
+		this.setTab = function(newTab){
+			//console.log(this.tab);
+			this.tab = newTab;
+			//console.log(this.tab);
 		};
 
-
+		this.isSet = function(title){
+			return this.tab === title;
+		};
 	});
-
-
 })();

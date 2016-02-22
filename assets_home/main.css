@@ -118,16 +118,15 @@ section p {
 	font-weight: 300;
 	font-size: 1.1rem;
 }
+/*Begin Skills*/
 section#skills ul {
 	list-style-type: none;
 	text-align: center;
-	
+	font-weight: 300;
+	font-size: 1.5rem;
 }
 section#skills ul li {
 	display: inline-block;
-	font-size: 1.5rem;
-	font-weight: 300;
-
 }
 #skills ul li + li {
 	margin-left: 4rem;
@@ -140,11 +139,13 @@ section#skills ul li {
 #skills ul li a:hover {
 	background-color: rgb(2,255,209);
 }
+#skills div > div ul {
+	margin-top: 3rem;
+	font-size: 1.25rem;
+	font-weight: 400;
+}
 .active  {
 	background-color: rgb(2,255,209);
-}
-#skills div > div {
-	background-color: lightblue;
 }
 footer {
 	width: 100%;
