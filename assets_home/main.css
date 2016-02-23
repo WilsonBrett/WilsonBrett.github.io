@@ -81,7 +81,7 @@ section + section {
 }
 section#projects > div {
 	width: 1200px;
-	background-color: rgb(230,230,230);;
+	background-color: rgb(230,230,230);
 	margin: 0 auto;
 	text-align: center;
 	padding: 2rem 0 1rem;
@@ -160,6 +160,19 @@ section#experience div div h3 + h3 {
 }
 #experience span {
 	font-weight: 400;
+}
+#resume {
+	display: inline-block;
+	margin-top: 1.5rem;
+	color: white;
+	padding: .25rem .5rem;
+	border-radius: 10px;
+	background-color: rgb(50,50,50);
+	font-size: 1.25rem;
+}
+#resume:hover {
+	background-color: rgb(2,255,209);
+	color: rgb(50,50,50);
 }
 footer {
 	width: 100%;

@@ -5,8 +5,8 @@
 
 	app.controller('SkillsController', function(){
 		this.skillGroups = [
-			{title: 'Front End', items: ['HTML5','CSS3','Bootstrap','JS/jQuery/Ajax','Angular']},
-			{title: 'Back End', items: ['Node.js/Express/Mongoose','Ruby/Rails/ActiveRecord','SQL/NoSQL']},
+			{title: 'Front End', items: ['HTML5','CSS3','Bootstrap','JS/jQuery/Ajax','Angular.js']},
+			{title: 'Back End', items: ['Node.js/Express/Mongoose','Ruby/Rails/ActiveRecord/Sinatra','SQL/NoSQL/JSON/API\'s']},
 			{title: 'Workflow', items: ['Git/Github','Agile/Waterfall','Unix Terminal']},
 			{title: 'Finance', items: ['Excel','Pivot Tables','VBA','Budgeting/Forecasting']}
 		];
@@ -14,9 +14,7 @@
 		this.tab = this.skillGroups[0].title;
 			
 		this.setTab = function(newTab){
-			//console.log(this.tab);
 			this.tab = newTab;
-			//console.log(this.tab);
 		};
 
 		this.isSet = function(title){
