@@ -174,10 +174,22 @@ section#experience div div h3 + h3 {
 	background-color: rgb(2,255,209);
 	color: rgb(50,50,50);
 }
+section#contact div {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+#contact a, #contact a:visited {
+	text-decoration: none;
+	color: rgb(50,50,50);
+}
+#contact a + a {
+	margin-left: 3rem;
+}
 footer {
 	width: 100%;
 	background-color: rgb(50,50,50);
-	color: rgb(246,38,174);
+	color: yellow;
 }
 footer h3 {
 	text-align: center;
