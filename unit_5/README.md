@@ -1,4 +1,4 @@
-###Graise
+#Graise
 ##General Assembly unit project
 
 I designed this site from input gathered from a classmate who played the role of the client.
