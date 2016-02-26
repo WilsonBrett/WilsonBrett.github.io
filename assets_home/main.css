@@ -9,7 +9,7 @@ a {
 }
 header {
 	width: 100%;
-	padding: 1rem 1rem .5rem;
+	padding: 1rem;
 	background-color: rgb(50,50,50);
 }
 header img {
@@ -17,17 +17,14 @@ header img {
 	top: 20px;
 	left: 100px;
 	border-radius: 50%;
-	border:3px solid white;
+	border: 3px solid white;
 	width: 175px;
 	margin: 0 auto;
 }
-header div {
-	float: right;
-	width: 485px;
-}
 nav {
-	float: right;	
+	float: right;
 	list-style-type: none;
+
 }
 nav a {
 	padding: 0 1rem;
@@ -37,33 +34,31 @@ nav a {
 	color: lightblue;
 	font-variant: small-caps;
 	font-weight: 400;
-
 }
 nav a:hover {
 	color: white;
 }
-header div h2 {
-	color: yellow;
-	font-size: 2.5rem;
-	float: right;
-	text-align: right;
-	padding: 1rem 1rem 0;
-	clear: right;
-	width: 100%;
-	font-weight: 300;
-}
-h1 {
-	font-family: 'Source Sans Pro', serif;
+header h1 {
+	display: inline;
 	font-size: 4rem;
 	color: white;
-	display: inline;
 	position: relative;
 	left: 275px;
-	top: 20px;
-	margin: 0;
+	top: 10px
 }
-h1 span {
+header h1 span {
 	font-weight: 300;
+}
+header h2 {
+	color: yellow;
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding: 0 1rem;
+	display: inline-block;
+	position: absolute;
+	top: 47px;
+	right: 20px;
+	
 }
 div#hero {
 	height: 75vh;
@@ -215,4 +210,55 @@ section.even {
 	display: block;
 	height: 0;
 	clear: both;
+}
+@media screen and (max-width: 1000px) {
+	header img {
+		left: 20px;
+	}
+	header h1 {
+		left: 195px;
+	}
+}
+@media screen and (max-width: 900px) {
+	header h1 {
+		left: 20px;
+	}
+	header img {
+		display: none;	
+	}
+}
+@media screen and (max-width: 850px) {
+	div#hero {
+		display: none;
+	}
+	header h1, header h2, nav {
+		position: static;
+		display: block;
+		text-align: center;
+	}
+	header h2 {
+		margin-bottom: 1rem;
+	}
+	nav {
+		float: none;
+	}
+}
+@media screen and (max-width: 550px) {
+	nav a {
+		display: block;
+		font-size: 1.5rem;
+		color: white;
+		padding: .5rem;
+		width: 75%;
+		margin: 0 auto;
+	}
+	nav a:hover {
+		color: yellow;
+	}
+	nav a:active {
+		color: red;
+	}
+	nav a + a {
+		border-top: 1px solid grey;
+	}
 }
