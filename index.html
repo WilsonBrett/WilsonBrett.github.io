@@ -39,6 +39,7 @@
 			<section id='skills' class='odd clearfix' ng-controller='SkillsController as skills'>
 				<div class='wrapper'>
 					<h2>Skills</h2>
+					<p>(This section powered by Angular.js)</p>
 					<ul>
 						<li ng-repeat="skillGroup in skills.skillGroups">
 							<a href ng-click='skills.setTab(skillGroup.title)' ng-class='{active: skills.isSet(skillGroup.title)}'>{{skillGroup.title}}</a>
