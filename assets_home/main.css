@@ -201,7 +201,8 @@ section.even {
 	background-color: white;
 }
 .wrapper {
-	width: 850px;
+	max-width: 850px;
+	min-width: 400px;
 	margin: 0 auto;
 }
 .clearfix:after {
@@ -217,6 +218,16 @@ section.even {
 	}
 	header h1 {
 		left: 195px;
+	}
+	#skills > div > div ul {
+		/*need to reduce initial margin*/
+		margin-top: 2rem;
+	}
+	#skills > div > div ul li {
+		display: block;
+	}
+	#skills > div > div ul li + li {
+		margin: .5rem 0 0;
 	}
 }
 @media screen and (max-width: 900px) {
@@ -242,18 +253,42 @@ section.even {
 	nav {
 		float: none;
 	}
+	nav a {
+		color: white;
+	}
+	nav a:hover {
+		color: rgb(2,255,209);
+	}
+	nav a:active {
+		color: red;
+	}
+	#skills > div > ul {
+		width: 50%;
+		float: left;
+	}
+	#skills > div > ul li {
+		display: block;
+		margin: 0;
+	}
+	#skills > div > ul li + li{
+		margin-top: 1.5rem;
+	}
+	#skills > div > div {
+		display: block;
+		width: 50%;
+		float: right;
+	}
+	#skills > div > div > ul {
+		margin-top: 0;
+	}
 }
 @media screen and (max-width: 550px) {
 	nav a {
 		display: block;
 		font-size: 1.5rem;
-		color: white;
 		padding: .5rem;
 		width: 75%;
 		margin: 0 auto;
-	}
-	nav a:hover {
-		color: yellow;
 	}
 	nav a:active {
 		color: red;
