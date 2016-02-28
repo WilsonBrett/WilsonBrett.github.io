@@ -74,8 +74,6 @@ section + section {
 	border-top: 1px solid rgba(77,77,77,.2);
 }
 section#projects > div {
-	max-width: 1200px;
-	min-width: 375px;
 	background-color: rgb(230,230,230);
 	margin: 0 auto;
 	text-align: center;
@@ -245,6 +243,10 @@ section.even {
 	header img {
 		display: none;	
 	}
+	#projects {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 @media screen and (max-width: 850px) {
 	div#hero {
@@ -289,10 +291,6 @@ section.even {
 	#skills > div > div > ul {
 		margin-top: 0;
 	}
-	#projects {
-		padding-left: 0;
-		padding-right: 0;
-	}
 }
 @media screen and (max-width: 550px) {
 	nav a {
@@ -308,4 +306,5 @@ section.even {
 	nav a + a {
 		border-top: 1px solid grey;
 	}
+	#projects img
 }
