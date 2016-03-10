@@ -24,7 +24,6 @@ header img {
 nav {
 	float: right;
 	list-style-type: none;
-
 }
 nav a {
 	padding: 0 1rem;
@@ -73,6 +72,7 @@ section {
 section + section {
 	border-top: 1px solid rgba(77,77,77,.2);
 }
+/*Begin Projects*/
 section#projects > div {
 	background-color: rgb(230,230,230);
 	margin: 0 auto;
@@ -94,10 +94,10 @@ section div.project_group {
 .project_group a:hover {
 	color: red;
 }
-.project_group img {
+.project_group a img {
 	display: block;
 	width: 325px;
-	height: 275px;
+	height: 275px;/*aspect ratio 84.6154%*/
 }
 section h2 {
 	text-align: center;
@@ -211,7 +211,6 @@ section.even {
 }
 .wrapper {
 	max-width: 850px;
-	min-width: 300px;
 	margin: 0 auto;
 }
 .clearfix:after {
@@ -309,5 +308,15 @@ section.even {
 	}
 	nav a + a {
 		border-top: 1px solid grey;
+	}
+	section div.project_group {
+		margin: 2rem 0 0;
+	}
+}
+@media screen and (max-width: 350px) {
+	.project_group a img {
+		width: 280px;
+		height: 237px;
+		
 	}
 }
