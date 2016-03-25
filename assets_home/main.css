@@ -341,11 +341,16 @@ section.even {
 	section div.project_group {
 		margin: 2rem 0 0;
 	}
+	#contact a + a {
+		margin-left: 1.5rem;
+	}
 }
 @media screen and (max-width: 350px) {
 	.project_group a img {
 		width: 280px;
 		height: 237px;
-		
+	}
+	#contact a + a {
+		margin-left: 1.25rem;
 	}
 }
