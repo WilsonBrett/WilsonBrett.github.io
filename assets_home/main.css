@@ -303,6 +303,9 @@ section.even {
 	nav a:active {
 		color: red;
 	}
+	div.project_link div.curtain {
+		display: none;
+	}
 	#skills > div > ul {
 		width: 50%;
 		float: left;
@@ -338,10 +341,10 @@ section.even {
 	nav a + a {
 		border-top: 1px solid grey;
 	}
-	section div.project_group {
+	div.project_group {
 		margin: 2rem 0 0;
 	}
-	#contact a + a {
+	section#contact a + a {
 		margin-left: 1.5rem;
 	}
 }
