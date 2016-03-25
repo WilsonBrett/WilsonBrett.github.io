@@ -73,16 +73,56 @@ section + section {
 	border-top: 1px solid rgba(77,77,77,.2);
 }
 /*Begin Projects*/
+section h2 {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+section#projects div.project_group h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: white;
+	/*Needed both of these here because show me the movie was not centering after line break*/
+	text-align: center;
+	margin: 0 auto;
+}
+section p {
+	line-height: 2.5rem;
+	font-weight: 300;
+	font-size: 1.2rem;
+}
 section#projects > div {
 	background-color: rgb(230,230,230);
 	margin: 0 auto;
 	text-align: center;
 	padding: 0 0 2rem;
 }
-section div.project_group {
+div.project_group {
 	display: inline-block;
 	margin: 2rem 1rem 0rem;
 	text-align: left;
+}
+div.project_link {
+	position: relative;
+}
+div.project_link div.curtain {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgb(0,175,215);
+	opacity: .95;
+	transition: bottom .75s, opacity .75s;
+}
+div.project_group:hover div.project_link > div.curtain {
+	bottom: 100%;
+	opacity: 0;
 }
 .project_group > a:last-child {
 	text-decoration: none;	
@@ -99,18 +139,7 @@ section div.project_group {
 	width: 325px;
 	height: 275px;/*aspect ratio 84.6154%*/
 }
-section h2 {
-	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
-	font-size: 3rem;
-	margin-bottom: 2rem;
-}
-section p {
-	line-height: 2.5rem;
-	font-weight: 300;
-	font-size: 1.2rem;
-}
+
 /*Begin Skills*/
 section#skills h2 {
 	margin-bottom: 0;
