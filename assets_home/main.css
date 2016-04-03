@@ -116,6 +116,7 @@ div.project_link div.curtain {
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
+	/*background: linear-gradient(to bottom, rgb(0,175,215), rgb(2,255,209));*/
 	background-color: rgb(0,175,215);
 	opacity: .95;
 	transition: bottom .75s, opacity .75s;

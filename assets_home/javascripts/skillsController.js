@@ -5,7 +5,7 @@
 
 	app.controller('SkillsController', function(){
 		this.skillGroups = [
-			{title: 'Front End', items: ['HTML5','CSS3','Bootstrap','JS/jQuery/Ajax','Angular.js']},
+			{title: 'Front End', items: ['HTML5','CSS3','Bootstrap','JS/jQuery/Ajax','Angular.js','Meteor.js']},
 			{title: 'Back End', items: ['Node.js/Express/Mongoose','Ruby/Rails/ActiveRecord/Sinatra','SQL/NoSQL/JSON/API\'s']},
 			{title: 'Workflow', items: ['Git/Github','Agile/Waterfall','Unix Terminal']},
 			{title: 'Finance', items: ['Excel','Pivot Tables','VBA','Budgeting/Forecasting']}
