@@ -179,6 +179,29 @@ section#skills ul li {
 .active  {
 	background-color: rgb(2,255,209);
 }
+/*recommendation*/
+section#recommendation {
+	padding: 5rem;
+	background-color: rgb(30,30,30);
+}
+#recommendation article {
+	font-size: 2rem;
+	line-height: 3rem;
+	color: rgb(255,255,100);
+	font-weight: 300;
+	font-style: italic;
+}
+#recommendation p {
+	color: white;
+	font-size: 1rem;
+	line-height: normal;
+	font-family: sans-serif;
+	font-style: normal;
+}
+#recommendation p:first-child {
+	margin-top: 1.5rem;
+}
+
 /*begin Experience*/
 section#experience div div {
 	width: 67%;
@@ -345,6 +368,16 @@ section.even {
 	}
 	div.project_group {
 		margin: 2rem 0 0;
+	}
+	section#recommendation {
+		padding: 2rem;
+	}
+	#recommendation article {
+		font-size: 1rem;
+		line-height: normal;
+		color: rgb(255,255,100);
+		font-weight: 300;
+		font-style: normal;
 	}
 	section#contact a + a {
 		margin-left: 1.5rem;
