@@ -10,7 +10,7 @@ a {
 header {
 	width: 100%;
 	padding: 1rem;
-	background-color: rgb(50,50,50);
+	background-color: rgb(30,30,30);
 }
 header img {
 	position: absolute;
@@ -79,6 +79,17 @@ section h2 {
 	font-weight: 300;
 	font-size: 3rem;
 	margin-bottom: 2rem;
+}
+/*begin about section*/
+section#about h2 {
+	position: relative;
+	left: 50px;
+	opacity: 0;
+}
+section#about p {
+	position: relative;
+	left: -100px;
+	opacity: 0;
 }
 section#projects div.project_group h3 {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -245,7 +256,7 @@ section#contact div {
 /*Begin Footer*/
 footer {
 	width: 100%;
-	background-color: rgb(50,50,50);
+	background-color: rgb(30,30,30);
 	color: yellow;
 }
 footer h3 {
