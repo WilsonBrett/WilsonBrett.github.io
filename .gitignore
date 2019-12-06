@@ -1,5 +1,5 @@
 .picasa.ini
-dist/css/
-dist/js/
-dist/html/
+dist/css/**/*.css
+dist/js/**/*.js
+dist/html/**/*.html
 node_modules
