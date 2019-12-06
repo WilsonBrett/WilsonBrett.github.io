@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": ""
+    "build": "",
+    "build-js": "",
+    "build-sass": ""
   },
   "dependencies": {
     "node-sass": "^4.13.0"

@@ -1,4 +1,4 @@
 .picasa.ini
-./dist
-./node_modules/**
+./dist/js/**/*.js
+./dist/css/**/*.css
 node_modules
