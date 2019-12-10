@@ -1,17 +1,29 @@
 {
   "name": "brettwilsonrocks",
   "version": "1.0.0",
-  "description": "",
+  "description": "Brett Wilson Home",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "build": "",
-    "build-js": "",
-    "build-sass": ""
+    "build": "./node_modules/.bin/webpack && npm run build-styles",
+    "build-w": "./node_modules/.bin/webpack -w && npm run build-styles",
+    "build-styles": "node-sass ./src/components/app -o ./dist/css",
+    "start": "./node_modules/.bin/webpack-dev-server",
+    "stop": "killall node"
   },
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "webpack": "^4.41.2"
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
